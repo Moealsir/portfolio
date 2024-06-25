@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-element.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 1440px) {
+    .the-skills {
+        @apply scale-125;  
+    }
+    .the-skills:first-child {
+        background: red !important;
+    }
+}
+
+.card-shadow {
+    box-shadow: rgba(78,186,191,.1) 0 0 2px,rgba(78,186,191,.3) 4px 5px 0,rgba(78,186,191,.2) 7px 11px 0,rgba(78,186,191,.1) 12px 17px 0,rgba(78,186,191,.05) 17px 23px 0;
+}
+
+.section-heading {
+    text-shadow: rgba(78,186,191,.1) 0 0 2px,rgba(78,186,191,.3) 4px 5px 0,rgba(78,186,191,.2) 7px 11px 0,rgba(78,186,191,.1) 12px 17px 0,rgba(78,186,191,.05) 17px 23px 0;
+    @apply text-6xl font-bold py-8 text-white;
+}
+
+.sections {
+    @apply bg-paradiso-500 w-full min-h-screen justify-center items-center flex flex-col;
+}
+
+.nodejs-badge {
+    background-color: rgba(135, 201, 41, 0.8);
+}
+
+.express-badge {
+    background-color: rgba(33, 37, 41, 0.8);
+}
+
+.html-badge {
+    background-color: rgba(231, 80, 40, 0.8);
+}
+
+.css-badge {
+    background-color: rgba(42, 147, 201, 0.8);
+}
+
+.javascript-badge {
+    background-color: rgba(245, 208, 50, 0.8);
+}
+
+.sqlite-badge {
+    background-color: rgba(11, 125, 203, 0.8);
+}
