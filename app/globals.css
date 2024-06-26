@@ -29,7 +29,7 @@
 
 .section-heading {
     text-shadow: rgba(78,186,191,.1) 0 0 2px,rgba(78,186,191,.3) 4px 5px 0,rgba(78,186,191,.2) 7px 11px 0,rgba(78,186,191,.1) 12px 17px 0,rgba(78,186,191,.05) 17px 23px 0;
-    @apply text-6xl font-bold py-8 text-white;
+    @apply text-6xl font-bold text-white;
 }
 
 .sections {
