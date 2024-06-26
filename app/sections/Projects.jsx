@@ -24,9 +24,9 @@ const Projects = () => {
             <img
               src={project.imgSrc.src.src}
               alt={project.imgSrc.src.alt}
-              className="rounded-xl bg-white w-full items-start h-[300px] project-img    "
+              className="rounded-xl bg-white w-full items-start h-[300px] project-img"
             />
-            <div className="flex flex-col justify-between w-[500px] max-sm:scale-90">
+            <div className="flex flex-col justify-between w-[500px] max-sm:w-full">
               <div className="text-white flex justify-between items-center w-full p-2">
                 <h2 className="text-2xl text-paradiso-200 project-title font-bold">
                   {project.title}
@@ -63,7 +63,7 @@ const Projects = () => {
                       alt={lang.src.alt}
                       className="h-4 w-4 filter-white"
                     />
-                    <p className="text-[0.8rem] font-bold text-white cursor-default">
+                    <p className="text-[0.8rem] font-bold text-white cursor-default text-nowrap">
                       {lang.name}
                     </p>
                   </div>

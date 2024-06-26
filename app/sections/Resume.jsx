@@ -7,7 +7,7 @@ import positionIcon from '../assets/icons/position.svg';
 
 const Resume = () => {
   return (
-    <section id="resume" className='sections padding-x max-container'>
+    <section id="resume" className='sections padding-x  max-container'>
       <h2 className="section-heading">Resume</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         <ResumeCard icon={educationIcon} title="Education">
