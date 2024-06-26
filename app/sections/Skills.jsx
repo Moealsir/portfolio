@@ -40,8 +40,8 @@ const Skills = () => {
         </div>
       </div>
       <div className="github-contributions flex flex-col justify-center items-center md:scale-90">
-        <h2 className="section-heading text-center max-sm:scale-50">GitHub Contributions</h2>
-        <div className='bg-paradiso-400 rounded-xl p-6 shadow-2xl  lg:scale-125 lg:mb-10 lg:mt-10 md:scale-90 max-sm:scale-75 max-sm:w-2/4 sm:scale-75'>
+        <h2 ref={h1Ref} className="section-heading text-center max-sm:scale-50">GitHub Contributions</h2>
+        <div className='bg-paradiso-400 rounded-xl p-6 shadow-2xl lg:scale-125 lg:mb-10 lg:mt-10 md:scale-90 max-sm:scale-75 max-sm:w-2/4 sm:scale-75'>
           <GitHubCalendar username="Moealsir" />
         </div>
       </div>
