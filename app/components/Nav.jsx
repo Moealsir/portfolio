@@ -39,7 +39,7 @@ const Nav = () => {
 
     return (
         <header className={`padding-x sticky top-0 py-2 z-10 w-full ${navBackgroundClass} max-lg:flex max-lg:justify-end max-lg:items-end max-lg:px-4`}>
-            <nav className={`flex justify-between items-center max-container ${navTextColorClass}`}>
+            <nav className={`flex justify-between items-center max-container ${navTextColorClass} overflow-hidden`}>
                 {/* Logo */}
                 {/* <a href="/">
                     <Image src={headerLogo} alt="logo" width={130} height={29} />
