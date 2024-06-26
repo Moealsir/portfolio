@@ -36,6 +36,8 @@ import education from './education.svg'
 import workExperience from './workexperience.svg'
 import certifications from './certifications.svg'
 import position from './position.svg'
+import source from './source.svg'
+import preview from './preview.svg'
 export {
     arrowRight,
     cheveronRight,
@@ -75,4 +77,6 @@ export {
     workExperience,
     certifications,
     position,
+    source,
+    preview,
 }
