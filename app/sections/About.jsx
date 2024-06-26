@@ -1,10 +1,18 @@
+"use client"
 import Image from 'next/image';
 import { Languages, Frontend, Backend, Database, Tools } from "../constants"
+import useIntersectionObserver from "../components/ui/useIntersectionObserver";
 
 const About = () => {
+  const h1Ref = useIntersectionObserver({ threshold: 0.5 });
+
   return (
     <section id="about" className='flex flex-col padding-x max-container bg-paradiso-500 w-full min-h-screen justify-center items-center'>
-        <h2 className="section-heading">About</h2>
+        <div className="flex flex-col items-start mb-16">
+        <h1 ref={h1Ref} className="section-heading pt-8 scroll-element">
+          About
+        </h1>
+      </div>
         <div className="grid lg:grid-cols-3 gap-8 text-white rounded-lg md:grid-cols-2 sm:grid-cols-1">
           <div className="p-2 rounded-md flex flex-col items-start justify-start bg-paradiso-950 transition-transform hover:shadow-xl ">
             <h1>Languages</h1>

@@ -71,7 +71,7 @@
 }
 
 .sections {
-    @apply bg-paradiso-500 w-full min-h-full justify-center items-center flex flex-col;
+    @apply bg-paradiso-500 w-full min-h-full justify-center items-center flex flex-col mt-4 mb-4;
 }
 
 .nodejs {

@@ -15,23 +15,23 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-sm:gap-1 mb-6">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4 project-figure"
+            className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4 project-figure max-sm:scale-90"
           >
             <img
               src={project.imgSrc.src.src}
               alt={project.imgSrc.src.alt}
               className="rounded-xl bg-white w-full items-start h-[300px] project-img    "
             />
-            <div className="flex flex-col justify-between w-[500px]">
+            <div className="flex flex-col justify-between w-[500px] max-sm:scale-90">
               <div className="text-white flex justify-between items-center w-full p-2">
                 <h2 className="text-2xl text-paradiso-200 project-title font-bold">
                   {project.title}
                 </h2>
-                <div className="flex gap-2">
+                <div className="flex gap-2 ">
                   <img
                     src={source.src}
                     alt="Source Code"
@@ -52,7 +52,7 @@ const Projects = () => {
                   />
                 </div>
               </div>
-              <div className="flex gap-2 mt-2">
+              <div className="flex gap-2 mt-2 max-sm:mb-2">
                 {project.used.map((lang, index) => (
                   <div
                     key={index}
