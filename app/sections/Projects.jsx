@@ -6,16 +6,16 @@ import { preview, source } from "../assets/icons";
 import { Image } from "@nextui-org/image";
 
 const Projects = () => {
-  const h1Ref = useIntersectionObserver({ threshold: 0.5 });
+  const h1Ref = useIntersectionObserver({ threshold: 0.1 });
 
   return (
-    <section id="projects" className="sections border-b-2 border-t-2">
-      <div className="flex flex-col items-start mb-16">
-        <h1 ref={h1Ref} className="section-heading pt-8 scroll-element">
+    <section id="projects" className="sections padding-x max-container">
+      <div className="flex flex-col items-start mb-4 lg:mb-10">
+        <h1 className="section-heading pt-8">
           Projects
         </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-sm:gap-1 mb-6">
+      <div ref={h1Ref} className="scroll-element grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 max-sm:gap-1 mb-6">
         {projectData.map((project, index) => (
           <div
             key={index}
@@ -26,7 +26,7 @@ const Projects = () => {
               alt={project.imgSrc.src.alt}
               className="rounded-xl bg-white w-full items-start h-[300px] project-img"
             />
-            <div className="flex flex-col justify-between w-[500px] max-sm:w-full">
+            <div className="flex flex-col justify-between lg:w-[500px] sm:w-full max-sm:w-full">
               <div className="text-white flex justify-between items-center w-full p-2">
                 <h2 className="text-2xl text-paradiso-200 project-title font-bold">
                   {project.title}
@@ -52,11 +52,11 @@ const Projects = () => {
                   />
                 </div>
               </div>
-              <div className="flex gap-2 mt-2 max-sm:mb-2">
+              <div className="flex gap-2 mt-2 max-sm:mb-2 badges-container">
                 {project.used.map((lang, index) => (
                   <div
                     key={index}
-                    className={`hover:scale-105 flex gap-1 items-center text-center  shadow-md rounded-lg py-1 px-2 ${lang.bgClass}`}
+                    className={`hover:scale-105 flex gap-1 items-center text-center shadow-md rounded-lg py-1 px-2 ${lang.bgClass}`}
                   >
                     <img
                       src={lang.src.src}
@@ -69,6 +69,7 @@ const Projects = () => {
                   </div>
                 ))}
               </div>
+
               <div className="align-justify">
                 <p className="justify-start align-justify px-2 mb-4 font-montserrat text-slate-gray text-xl leading-7">
                   {project.description}
