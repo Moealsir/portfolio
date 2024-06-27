@@ -10,13 +10,13 @@ import useIntersectionObserver from "../components/ui/useIntersectionObserver";
 const Resume = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.05 });
   return (
-    <section id="resume" className='sections padding-x max-container'>
+    <section id="resume" className='sections padding-x max-container '>
       <div className="flex flex-col items-start mb-16">
         <h1 ref={h1Ref} className="section-heading pt-8 scroll-element">
           Resume
         </h1>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-sm:scale-90 sm:scale-90 lg:scale-110'>
         <ResumeCard icon={educationIcon} title="Education">
           <div>
             <h3 className='text-xl font-bold text-paradiso-400'>Honors in Data Science</h3>
