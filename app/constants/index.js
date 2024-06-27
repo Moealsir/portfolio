@@ -65,11 +65,11 @@ export const Tools = [
 
 export const projectData = [
     {
-      title: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur aiscing elit. Nam nec facilisis.',
-      imgSrc: {src: test1, alt: "test1"},
+      title: 'Portfolio',
+      description: 'Single Page Responsive Portfolio Website Using react and tailwindcss. Compatible with all mobile devices, with a beautiful and pleasant user interface',
+      imgSrc: {src: test1, alt: "Poerfolio"},
       link: '#!',
-      year: '2024',
+      year: '06-2024',
       used: [{name: "CSS", src: css, bgClass: "css"},
          {name: "HTML", src: html, bgClass: "html"},
          {name: "Tailwind CSS", src: tailwind, bgClass: "javascript"},
