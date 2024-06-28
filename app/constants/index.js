@@ -8,6 +8,7 @@ import { css, html, tailwind, react } from "../assets/icons";
 import { test1 } from "../assets/images/";
 import { test2 } from "../assets/images/";
 import { test3 } from "../assets/images/";
+
 export const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
@@ -148,6 +149,19 @@ export const Experiences = [
         company: "ALX Africa",
         year: "2023 - present",
     }
+]
+
+export const Position = [
+    {
+        subject: "Bachelor of Science in Computer Science",
+        school: "Sudan International University",
+        year: "2017 - 2022"
+    },
+    {
+        subject: "Software Engineering",
+        school: "ALX Africa",
+        year: "2023 - present",
+    },
 ]
 
 
