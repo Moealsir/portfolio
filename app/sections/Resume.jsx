@@ -19,8 +19,8 @@ const Resume = () => {
           Resume
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row justify-start items-start max-sm:items-center  gap-10 max-sm:gap-2 lg:scale-110 md:flex-col">
-        <div className="w-[450px] max-sm:w-2/3">
+      <div className="flex flex-col lg:flex-row justify-start items-start max-sm:items-center gap-10 max-sm:gap-2 lg:scale-110 md:flex-col">
+        <div className="w-full lg:w-1/2">
           <ResumeCard icon={educationIcon} title="Education">
             <div>
               <ul className="flex flex-col gap-2">
@@ -35,9 +35,9 @@ const Resume = () => {
                     </span>
                     <br />
                     <div className="flex w-full mt-1 mb-2">
-                    <span className="date-badge">
-                    {edu.year}
-                    </span>
+                      <span className="date-badge">
+                        {edu.year}
+                      </span>
                     </div>
                   </li>
                 ))}
@@ -58,9 +58,9 @@ const Resume = () => {
                     </span>
                     <br />
                     <div className="flex w-full mt-1 mb-2">
-                    <span className="date-badge">
-                    {cert.year}
-                    </span>
+                      <span className="date-badge">
+                        {cert.year}
+                      </span>
                     </div>
                   </li>
                 ))}
@@ -68,7 +68,7 @@ const Resume = () => {
             </div>
           </ResumeCard>
         </div>
-        <div className="w-[450px] max-sm:w-2/3">
+        <div className="w-full lg:w-1/2">
           <ResumeCard icon={workExperienceIcon} title="Work Experience">
             <div>
               <ul className="flex flex-col gap-2">
@@ -83,9 +83,9 @@ const Resume = () => {
                     </span>
                     <br />
                     <div className="flex w-full mt-1 mb-2">
-                    <span className="date-badge">
-                    {exp.year}
-                    </span>
+                      <span className="date-badge">
+                        {exp.year}
+                      </span>
                     </div>
                   </li>
                 ))}
@@ -106,9 +106,9 @@ const Resume = () => {
                     </span>
                     <br />
                     <div className="flex w-full mt-1 mb-2">
-                    <span className="date-badge">
-                    {pos.year}
-                    </span>
+                      <span className="date-badge">
+                        {pos.year}
+                      </span>
                     </div>
                   </li>
                 ))}
