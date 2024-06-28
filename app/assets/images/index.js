@@ -25,11 +25,22 @@ import thumbnailShoe3 from './thumbnail-shoe3.svg'
 import test1 from './test1.png'
 import test2 from './test2.png'
 import test3 from './test3.png'
+import portfolio from './portfolio.png'
+import alx from './alx.png'
+import imdb from './imdb.png'
+import twitterout from './twitterout.png'
+import bettyfixer from './bettyfixer.png'
 
 export {
     test1,
     test2,
     test3,
+
+    portfolio,
+    imdb,
+    alx,
+    twitterout,
+    bettyfixer,
 
     bigShoe1,
     bigShoe2,
