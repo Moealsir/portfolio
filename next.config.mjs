@@ -1,6 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    // output: "export",
-};
+// next-config.mjs
 
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    react: {
+      // Configuration related to React
+      removeProperties: true,
+      throwIfNamespace: false,
+    },
+  };
+  
+  export default nextConfig;
+  
