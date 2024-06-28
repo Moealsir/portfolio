@@ -20,13 +20,15 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4 project-figure"
+            className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4"
           >
+          <figure className="project-figure w-full">
             <img
               src={project.imgSrc.src.src}
               alt={project.imgSrc.src.alt}
-              className="rounded-xl bg-white w-full items-start h-[300px] project-img"
+              className="rounded-xl bg-white w-full items-start h-[300px] project-img project-figure hover:scale-110"
             />
+          </figure>
             <div className="flex flex-col justify-between lg:w-[500px] sm:w-full max-sm:w-full">
               <div>
                 <div className="text-white flex justify-between items-center w-full p-2">
@@ -40,7 +42,7 @@ const Projects = () => {
                       width={48}
                       height={48}
                       className="cursor-pointer source-icon hover:opacity-75"
-                      onClick={() => window.open(project.link, "_blank")}
+                      onClick={() => window.open(project.repo)}
                       style={{ filter: "invert(1)" }}
                     />
                     <img
@@ -49,12 +51,12 @@ const Projects = () => {
                       width={48}
                       height={48}
                       className="cursor-pointer source-icon hover:opacity-75"
-                      onClick={() => window.open(project.link, "_blank")}
+                      onClick={() => window.open(project.link)}
                       style={{ filter: "invert(1)" }}
                     />
                   </div>
                 </div>
-                <div className="flex gap-2 mt-2 max-sm:mb-2 badges-container">
+                <div className="flex gap-2 max-sm:mb-2 badges-container">
                   {project.used.map((lang, index) => (
                     <div
                       key={index}
@@ -72,8 +74,8 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="align-justify">
-                  <p className="justify-start align-justify px-2 mb-4 font-montserrat text-slate-gray text-xl leading-7">
+                <div className="text-justify pt-2">
+                  <p className="justify-start text-justify px-2 mb-4 font-montserrat text-slate-gray text-xl leading-7">
                     {project.description}
                   </p>
                 </div>

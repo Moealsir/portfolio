@@ -5,7 +5,7 @@ import { bash, expressjs, git, github, githubactions, vscode, postman, nginx } f
 import { mysql, mongodb, sqlite } from "../assets/icons";
 import { nodejs, nextjs, flask } from "../assets/icons";
 import { css, html, tailwind, react } from "../assets/icons";
-import { test1 } from "../assets/images/";
+import { test1, portfolio, alx, imdb, bettyfixer, twitterout } from "../assets/images/";
 import { test2 } from "../assets/images/";
 import { test3 } from "../assets/images/";
 
@@ -68,47 +68,80 @@ export const projectData = [
     {
       title: 'Portfolio',
       description: 'Single Page Responsive Portfolio Website Using react and tailwindcss. Compatible with all mobile devices, with a beautiful and pleasant user interface',
-      imgSrc: {src: test1, alt: "Poerfolio"},
-      link: '#!',
+      imgSrc: {src: portfolio, alt: "Poerfolio"},
+      repo: 'https://github.com/Moealsir/portfolio',
+      link: 'https://moealsir.github.io',
       year: '06-2024',
-      used: [{name: "CSS", src: css, bgClass: "css"},
+      used: [
          {name: "HTML", src: html, bgClass: "html"},
          {name: "Tailwind CSS", src: tailwind, bgClass: "javascript"},
-         {name: "React", src: react, bgClass: "express"}],
+         {name: "React", src: react, bgClass: "express"}
+        ],
     },
     {
-        title: 'Project 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adicing elit. Nam nec facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec facilisis.',
-        imgSrc: {src: test1, alt: "test1"},
+        title: 'WeatherWave7',
+        description: 'WeatherWave is a cutting-edge weather forecasting application that provides real-time weather updates and forecasts for locations worldwide. Designed with a user-friendly interface, it ensures a seamless experience for users across all devices. Utilizing the latest in meteorological technology, WeatherWave delivers accurate and detailed weather information, helping users stay prepared for any conditions.',
+        imgSrc: {src: portfolio, alt: "test1"},
+        repo: 'https://github.com/Moealsir/portfolio',
         link: '#!',
         year: '2024',
-        used: [{name: "CSS", src: css, bgClass: "html"},
+        used: [{name: "Next Js", src: nextjs, bgClass: "html"},
          {name: "HTML", src: html, bgClass: "html"},
          {name: "Tailwind CSS", src: tailwind, bgClass: "html"},
+         {name: "TypeScript", src: typescript, bgClass: "html"},
          {name: "React", src: react, bgClass: "html"}],
     },
     {
-        title: 'Project 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec facilisis.',
-        imgSrc: {src: test1, alt: "test1"},
+        title: 'IMDB Top 250 Scraper',
+        description: 'The IMDB Top 250 Scraper is a Python project that extracts detailed info on the top 250 IMDB movies, including titles, ratings, cast, crew, and storylines. Using Selenium and BeautifulSoup, it exports data to JSON, Excel, XML, and CSV for easy analysis and storage, providing seamless access to IMDB\'s top 250 list.',
+        imgSrc: {src: imdb, alt: "test1"},
+        repo: 'https://github.com/Moealsir/imdb_scraper',
         link: '#!',
         year: '2024',
-        used: [{name: "CSS", src: css, bgClass: "html"},
-         {name: "HTML", src: html, bgClass: "html"},
-         {name: "Tailwind CSS", src: tailwind, bgClass: "html"},
-         {name: "React", src: react, bgClass: "html"}],
+        used: [{name: "Python", src: css, bgClass: "html"},
+            {name: "Database", src: html, bgClass: "html"},
+            {name: "Selenium", src: tailwind, bgClass: "html"},
+            {name: "Web Scraping", src: react, bgClass: "html"}],
     },
     {
-        title: 'Project 4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec facilisis.',
-        imgSrc: {src: test1, alt: "test1"},
+        title: 'Project Detail Reminder Automation',
+        description: 'Automate project detail extraction and reminders using Selenium for web scraping and a WhatsApp bot built with JavaScript and Node.js using whatsapp-web.js. This tool fetches current and upcoming project details, sending reminders via terminal or WhatsApp. It optimizes workflow and organization efficiently.',
+        imgSrc: {src: alx, alt: "test1"},
+        repo: 'https://github.com/Moealsir/portfolio',
         link: '#!',
         year: '2024',
-        used: [{name: "CSS", src: css, bgClass: "html"},
-         {name: "HTML", src: html, bgClass: "html"},
-         {name: "Tailwind CSS", src: tailwind, bgClass: "html"},
-         {name: "React", src: react, bgClass: "html"}],
+        used: [{name: "Python", src: css, bgClass: "html"},
+         {name: "Node Js", src: html, bgClass: "html"},
+         {name: "Selenium", src: tailwind, bgClass: "html"},
+         {name: "Web Scraping", src: react, bgClass: "html"},
+         {name: "whatsapp web js", src: react, bgClass: "html"}],
     },
+    {
+        title: 'Twitter Bot Checker',
+        description: 'Create a Twitter bot converting user data to JSON and Excel. Extracted: Username, Availability, DM Type, Account Type, Verification',
+        imgSrc: {src: twitterout, alt: "test1"},
+        repo: '',
+        link: '#!',
+        year: '2024',
+        used: [{name: "Python", src: css, bgClass: "html"},
+         {name: "Node js", src: html, bgClass: "html"},
+         {name: "Selenium", src: tailwind, bgClass: "html"},
+         {name: "Web Scraping", src: react, bgClass: "html"},
+         {name: "Data Extraction", src: react, bgClass: "html"}],
+    },
+    {
+        title: 'BettyFixer',
+        description: 'Betty Fixer is a tool designed to automatically fix coding style issues in C files based on the Betty coding style guidelines. It performs corrections to ensure that the code complies with the Betty style, making it more readable and consistent.',
+        imgSrc: {src: bettyfixer, alt: "test1"},
+        repo: '',
+        link: '#!',
+        year: '2024',
+        used: [{name: "Python", src: css, bgClass: "html"},
+         {name: "Node js", src: html, bgClass: "html"},
+         {name: "Selenium", src: tailwind, bgClass: "html"},
+         {name: "Web Scraping", src: react, bgClass: "html"},
+         {name: "Data Extraction", src: react, bgClass: "html"}],
+    }
   ];
 
 export const Education = [
