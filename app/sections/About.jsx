@@ -40,11 +40,11 @@ const About = () => {
       </div>
 
       <div className="flex flex-col bg-paradiso-600 p-2 rounded-xl shadow-lg">
-        <div className="flex flex-col md:flex-row md:gap-10 lg:gap-40 justify-center items-center">
-          <div className="flex justify-center items-center p-0">
+        <div className="flex flex-col md:flex-row md:gap-10 lg:gap-40 lg:mx-6 justify-center items-center">
+          <div className="flex justify-center items-center p-0 ">
             <img
               ref={imgRef}
-              className="rounded-circle profile-img profile-move border-8 border-paradiso-400 w-[270px] h-[270px]"
+              className="rounded-circle profile-img profile-move border-8 border-paradiso-400 w-[270px] h-[270px] max-sm:mt-4 sm:mt-4 sm:mb-4 max-sm:mb-4"
               src="https://up6.cc/2024/06/171772528380021.jpg"
               alt="Boris Profile Picture"
             />
@@ -99,13 +99,13 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-start justify-start mb-16 p-4">
+      <div className="flex flex-col items-start justify-start mb-0 p-4">
         <h3 className="section-sub-heading text-center pt-10 scroll-element animate pb-6">
           Interests
         </h3>
         <div className="scroll-element animate grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:scale-90 gap-4 mb-6 max-sm:gap-1 md:pr-4 md:pl-4 ">
           {Interests.map((interest, index) => (
-            <ResumeCard key={index} icon={educationIcon} title={interest.title} />
+            <ResumeCard key={index} icon={interest.icon} title={interest.title} />
           ))}
         </div>
       </div>
