@@ -38,7 +38,19 @@ import certifications from './certifications.svg'
 import position from './position.svg'
 import source from './source.svg'
 import preview from './preview.svg'
+import programming from './programming.svg'
+import frontend from './frontend.svg'
+import backend from './backend.svg'
+import webdev from './webdev.svg'
+import typing from './typing.svg'
+import dns from './dns.svg'
 export {
+    dns,
+    typing,
+    webdev,
+    backend,
+    frontend,
+    programming,
     arrowRight,
     cheveronRight,
     chevronLeft,

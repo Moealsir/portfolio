@@ -165,22 +165,23 @@ export const Position = [
 ]
 
 import educationIcon from "../assets/icons/education.svg";
+import { programming, frontend, backend, webdev, typing, dns } from "../assets/icons/index.js";
 export const Interests = [
     {
         title: "Web Development",
-        icon: educationIcon,
+        icon: webdev,
     },
     {
         title: "Frontend Development",
-        icon: educationIcon,
+        icon: frontend,
     },
     {
         title: "Backend Development",
-        icon: educationIcon,
+        icon: backend,
     },
     {
         title: "Touch Typing",
-        icon: educationIcon,
+        icon: typing,
     },
     {
         title: "Scraping",
@@ -196,7 +197,7 @@ export const Interests = [
     },
     {
         title: "Domain & DNS",
-        icon: educationIcon,
+        icon: dns,
     },
 ]   
 
