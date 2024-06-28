@@ -3,6 +3,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.profile-move {
+        will-change: transform;
+        transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+}
+
+.profile-img {
+    box-shadow: 0 0 5px 1px rgba(0,0,0,.5) !important;
+    width: 270px;
+}
+
+.about-info {
+    text-align: justify;
+}
+
+.rounded-circle {
+border-radius: 50% !important;
+}
+
 .scroll-element {
     opacity: 0;
     transform: translateY(20px);
@@ -75,6 +93,16 @@ section {
     justify-content: center; /* Centers the text horizontally */
 }
 
+/* styles.css or equivalent */
+.interest-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+
 .source-icon {
     transition: filter 0.3s ease;
   }
@@ -90,6 +118,11 @@ section {
 .section-heading {
     text-shadow: rgba(78,186,191,.1) 0 0 2px,rgba(78,186,191,.3) 4px 5px 0,rgba(78,186,191,.2) 7px 11px 0,rgba(78,186,191,.1) 12px 17px 0,rgba(78,186,191,.05) 17px 23px 0;
     @apply text-6xl font-bold text-white;
+}
+
+.section-sub-heading {
+    text-shadow: rgba(78,186,191,.1) 0 0 2px,rgba(78,186,191,.3) 4px 5px 0,rgba(78,186,191,.2) 7px 11px 0,rgba(78,186,191,.1) 12px 17px 0,rgba(78,186,191,.05) 17px 23px 0;
+    @apply text-3xl font-bold text-white;
 }
 
 .sections {

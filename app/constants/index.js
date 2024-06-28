@@ -164,6 +164,41 @@ export const Position = [
     },
 ]
 
+import educationIcon from "../assets/icons/education.svg";
+export const Interests = [
+    {
+        title: "Web Development",
+        icon: educationIcon,
+    },
+    {
+        title: "Frontend Development",
+        icon: educationIcon,
+    },
+    {
+        title: "Backend Development",
+        icon: educationIcon,
+    },
+    {
+        title: "Touch Typing",
+        icon: educationIcon,
+    },
+    {
+        title: "Scraping",
+        icon: educationIcon,
+    },
+    {
+        title: "Data Fetching",
+        icon: educationIcon,
+    },
+    {
+        title: "Automating",
+        icon: educationIcon,
+    },
+    {
+        title: "Domain & DNS",
+        icon: educationIcon,
+    },
+]   
 
 // export const reviews = [
 //     {

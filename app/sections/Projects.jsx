@@ -15,7 +15,7 @@ const Projects = () => {
       </div>
       <div
         ref={h1Ref}
-        className="scroll-element grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 mb-6 max-sm:gap-10 md:pr-4 md:pl-4 "
+        className="scroll-element animate grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 mb-6 max-sm:gap-10 md:pr-4 md:pl-4 "
       >
         {projectData.map((project, index) => (
           <div
