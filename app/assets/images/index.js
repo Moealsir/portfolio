@@ -30,6 +30,7 @@ import alx from './alx.png'
 import imdb from './imdb.png'
 import twitterout from './twitterout.png'
 import bettyfixer from './bettyfixer.png'
+import weatherwave7 from './weatherwave7.png'
 
 export {
     test1,
@@ -41,6 +42,7 @@ export {
     alx,
     twitterout,
     bettyfixer,
+    weatherwave7,
 
     bigShoe1,
     bigShoe2,
