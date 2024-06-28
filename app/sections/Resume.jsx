@@ -1,97 +1,121 @@
-"use client"
-import React from 'react';
+"use client";
+import React from "react";
 import ResumeCard from "../components/ResumeCard";
-import educationIcon from '../assets/icons/education.svg';
-import workExperienceIcon from '../assets/icons/workexperience.svg';
-import certificationIcon from '../assets/icons/certifications.svg';
-import positionIcon from '../assets/icons/position.svg';
+import educationIcon from "../assets/icons/education.svg";
+import workExperienceIcon from "../assets/icons/workexperience.svg";
+import certificationIcon from "../assets/icons/certifications.svg";
+import poistionIcon from "../assets/icons/position.svg";
 import useIntersectionObserver from "../components/ui/useIntersectionObserver";
+
+import { Education, Certificates, Experiences, Position } from "../constants/index.js";
 
 const Resume = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.05 });
+
   return (
-    <section id="resume" className='sections padding-x max-container '>
+    <section id="resume" className="sections padding-x max-container">
       <div className="flex flex-col items-start mb-16">
         <h1 ref={h1Ref} className="section-heading pt-8 scroll-element">
           Resume
         </h1>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-sm:scale-90 sm:scale-90 lg:scale-110'>
-        <ResumeCard icon={educationIcon} title="Education">
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>Honors in Data Science</h3>
-            <p>University of Mumbai (July 2022 - Present)</p>
-          </div> 
-        </ResumeCard>
-        <ResumeCard icon={workExperienceIcon} title="Work Experience">
-          <div>
-            <h3 className='text-xl font-bold  text-paradiso-400'>Aadhar Medical and Educational Trust</h3>
-            <p>Web Development Intern (Sep 2022 - Oct 2022)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
+      <div className="flex flex-col lg:flex-row justify-start items-start max-sm:items-center  gap-10 max-sm:gap-2 lg:scale-110 md:flex-col">
+        <div className="w-[450px] max-sm:w-2/3">
+          <ResumeCard icon={educationIcon} title="Education">
+            <div>
+              <ul className="flex flex-col gap-2">
+                {Education.map((edu, index) => (
+                  <li key={index}>
+                    <span className="resume-div-sub-heading">
+                      {edu.subject}
+                    </span>
+                    <br />
+                    <span>
+                      {edu.school}
+                    </span>
+                    <br />
+                    <div className="flex w-full mt-1 mb-2">
+                    <span className="date-badge">
+                    {edu.year}
+                    </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>Don Bosco Institute of Technology</h3>
-            <p>Software Intern (Feb 2022 - Nov 2022)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
+          </ResumeCard>
+          <ResumeCard icon={certificationIcon} title="Certificates">
+            <div>
+              <ul className="flex flex-col gap-2">
+                {Certificates.map((cert, index) => (
+                  <li key={index}>
+                    <span className="resume-div-sub-heading">
+                      {cert.title}
+                    </span>
+                    <br />
+                    <span>
+                      Issued by {cert.by}
+                    </span>
+                    <br />
+                    <div className="flex w-full mt-1 mb-2">
+                    <span className="date-badge">
+                    {cert.year}
+                    </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>Anti-Plastic Brigade Charitable Trust</h3>
-            <p>Web Development Intern (Oct 2021 - Feb 2022)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
+          </ResumeCard>
+        </div>
+        <div className="w-[450px] max-sm:w-2/3">
+          <ResumeCard icon={workExperienceIcon} title="Work Experience">
+            <div>
+              <ul className="flex flex-col gap-2">
+                {Experiences.map((exp, index) => (
+                  <li key={index}>
+                    <span className="resume-div-sub-heading">
+                      {exp.position}
+                    </span>
+                    <br />
+                    <span>
+                      {exp.company}
+                    </span>
+                    <br />
+                    <div className="flex w-full mt-1 mb-2">
+                    <span className="date-badge">
+                    {exp.year}
+                    </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-        </ResumeCard>
-        <ResumeCard icon={certificationIcon} title="Certifications">
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>The Complete Node.js Developer Course</h3>
-            <p>Issued by Udemy (Dec 2022)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
+          </ResumeCard>
+          <ResumeCard icon={poistionIcon} title="Position Of Responsibilities">
+            <div>
+              <ul className="flex flex-col gap-2">
+                {Position.map((pos, index) => (
+                  <li key={index}>
+                    <span className="resume-div-sub-heading">
+                      {pos.subject}
+                    </span>
+                    <br />
+                    <span>
+                      {pos.school}
+                    </span>
+                    <br />
+                    <div className="flex w-full mt-1 mb-2">
+                    <span className="date-badge">
+                    {pos.year}
+                    </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>SQL for Data Science</h3>
-            <p>Issued by Great Learning (March 2022)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
-            </div>
-          </div>
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>Python Data Structures</h3>
-            <p>Issued by University of Michigan (August 2020)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
-            </div>
-          </div>
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>Programming for Everybody</h3>
-            <p>Issued by University of Michigan (July 2020)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
-            </div>
-          </div>
-        </ResumeCard>
-        <ResumeCard icon={positionIcon} title="Position Of Responsibilities">
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>Colosseum DBIT</h3>
-            <p>Web Development Head (Feb 2023 - Mar 2023)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
-            </div>
-          </div>
-          <div>
-            <h3 className='text-xl font-bold text-paradiso-400'>Hysteria DBCL</h3>
-            <p>Web Development Head (Jan 2023 - Feb 2023)</p>
-            <div className="flex mb-2 mt-1">
-              <p className="date-badge cursor-default">Sep 2022 - Oct 2022</p>
-            </div>
-          </div>
-        </ResumeCard>
+          </ResumeCard>
+        </div>
       </div>
     </section>
   );

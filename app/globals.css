@@ -56,6 +56,9 @@ section {
     overflow-x: hidden;
 }
 
+.resume-div-sub-heading {
+    @apply text-xl font-bold text-paradiso-400
+}
 
 .date-badge {
     font-size: var(--fs-100);
