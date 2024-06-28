@@ -5,7 +5,7 @@ import { bash, expressjs, git, github, githubactions, vscode, postman, nginx } f
 import { mysql, mongodb, sqlite } from "../assets/icons";
 import { nodejs, nextjs, flask } from "../assets/icons";
 import { css, html, tailwind, react } from "../assets/icons";
-import { test1, portfolio, alx, imdb, bettyfixer, twitterout } from "../assets/images/";
+import { test1, portfolio, alx, imdb, bettyfixer, twitterout, weatherwave7 } from "../assets/images/";
 import { test2 } from "../assets/images/";
 import { test3 } from "../assets/images/";
 
@@ -80,10 +80,10 @@ export const projectData = [
     },
     {
         title: 'WeatherWave7',
-        description: 'WeatherWave is a cutting-edge weather forecasting application that provides real-time weather updates and forecasts for locations worldwide. Designed with a user-friendly interface, it ensures a seamless experience for users across all devices. Utilizing the latest in meteorological technology, WeatherWave delivers accurate and detailed weather information, helping users stay prepared for any conditions.',
-        imgSrc: {src: portfolio, alt: "test1"},
-        repo: 'https://github.com/Moealsir/portfolio',
-        link: '#!',
+        description: 'WeatherWave7 is a cutting-edge weather forecasting application that provides real-time weather updates and forecasts for locations worldwide. Designed with a user-friendly interface, it ensures a seamless experience for users across all devices. Utilizing the latest in meteorological technology, WeatherWave delivers accurate and detailed weather information, helping users stay prepared for any conditions.',
+        imgSrc: {src: weatherwave7, alt: "test1"},
+        repo: 'https://github.com/Moealsir/WeatherWave7/',
+        link: 'https://moealsir.github.io/get_started',
         year: '2024',
         used: [{name: "Next Js", src: nextjs, bgClass: "html"},
          {name: "HTML", src: html, bgClass: "html"},
