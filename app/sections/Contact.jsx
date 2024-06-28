@@ -7,7 +7,7 @@ const About = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.5 });
 
   return (
-    <section id="about" className='flex flex-col padding-x max-container bg-paradiso-500 w-full min-h-full justify-center items-center'>
+    <section id="contact" className='flex flex-col padding-x max-container bg-paradiso-500 w-full min-h-full justify-center items-center'>
         <div className="flex flex-col items-start mb-16">
         <h1 ref={h1Ref} className="section-heading pt-8 scroll-element">
           Contact

@@ -9,18 +9,18 @@ const Projects = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.1 });
 
   return (
-    <section id="projects" className="sections padding-x max-container">
+    <section id="projects" className="sections padding-x max-container max-sm:pr-4 max-sm:pl-4">
       <div className="flex flex-col items-start mb-4 lg:mb-10">
         <h1 className="section-heading pt-8">Projects</h1>
       </div>
       <div
         ref={h1Ref}
-        className="scroll-element grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 max-sm:gap-1 mb-6 "
+        className="scroll-element grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 mb-6 max-sm:gap-10 md:pr-4 md:pl-4 "
       >
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4 project-figure max-sm:scale-90"
+            className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4 project-figure"
           >
             <img
               src={project.imgSrc.src.src}
