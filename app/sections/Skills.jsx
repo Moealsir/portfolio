@@ -16,7 +16,7 @@ const Skills = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.5 });
 
   return (
-    <section id="skills" className='sections padding-x  max-container'>
+    <section id="skills" className='sections padding-x  max-container max-sm:pr-4 max-sm:pl-4'>
       <div className="flex flex-col items-start mb-16">
         <h1 className="section-heading pt-8">
           Skills
@@ -40,8 +40,8 @@ const Skills = () => {
         </div>
       </div>
       <div className="github-contributions flex flex-col justify-center items-center md:scale-90">
-        <h2 ref={h1Ref} className="section-heading text-center max-sm:scale-50 lg:mt-2 lg:mb-4">GitHub Contributions</h2>
-        <div className='bg-paradiso-400 rounded-xl p-6 shadow-2xl lg:scale-125 lg:mb-16 lg:mt-10 md:scale-90 max-sm:scale-75 max-sm:w-2/4 sm:scale-75'>
+        <h2 ref={h1Ref} className="section-heading text-center max-sm:scale-50 lg:mt-2 lg:mb-4 max-sm:pr-4 max-sm:text-wrap ">GitHub Contributions</h2>
+        <div className='bg-paradiso-400 rounded-xl p-6 shadow-2xl lg:scale-125 lg:mb-16 lg:mt-10 md:scale-90 max-sm:scale-75 max-sm:w-2/4 sm:scale-75 max-sm:pr-4 max-sm:pl-4'>
           <GitHubCalendar username="Moealsir" />
         </div>
       </div>
