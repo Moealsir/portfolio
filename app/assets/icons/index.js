@@ -10,47 +10,81 @@ import shieldTick from './shield-tick.svg'
 import star from './star.svg'
 import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
-import c from './c.svg'
-import javascript from './java-script.svg'
-import python from './python.svg'
-import typescript from './typescript.svg'
-import css from './css.svg'
-import html from './html.svg'
-import tailwind from './tailwind.svg'
-import react from './react.svg'
-import nextjs from './nextjs.svg'
-import expressjs from './expressjs.svg'
-import nodejs from './nodejs.svg'
-import mysql from './mysql.svg'
-import mongodb from './mongodb.svg'
-import sqlite from './sqlite.svg'
-import git from './git.svg'
-import github from './github.svg'
-import githubactions from './github-actions.svg'
-import vscode from './vscode.svg'
-import postman from './postman.svg'
-import nginx from './nginx.svg'
-import flask from './flask.svg'
-import bash from './bash.svg'
+
+
+import c from './Skills/c.svg'
+import javascript from './Skills/java-script.svg'
+import python from './Skills/python.svg'
+import typescript from './Skills/typescript.svg'
+import css from './Skills/css.svg'
+import html from './Skills/html.svg'
+import tailwind from './Skills/tailwind.svg'
+import react from './Skills/react.svg'
+import nextjs from './Skills/nextjs.svg'
+import expressjs from './Skills/expressjs.svg'
+import nodejs from './Skills/nodejs.svg'
+import mysql from './Skills/mysql.svg'
+import mongodb from './Skills/mongodb.svg'
+import sqlite from './Skills/sqlite.svg'
+import git from './Skills/git.svg'
+import github from './Skills/github.svg'
+import githubactions from './Skills/github-actions.svg'
+import vscode from './Skills/vscode.svg'
+import postman from './Skills/postman.svg'
+import nginx from './Skills/nginx.svg'
+import flask from './Skills/flask.svg'
+import bash from './Skills/bash.svg'
+
+
 import education from './education.svg'
 import workExperience from './workexperience.svg'
 import certifications from './certifications.svg'
 import position from './position.svg'
 import source from './source.svg'
 import preview from './preview.svg'
-import programming from './programming.svg'
-import frontend from './frontend.svg'
-import backend from './backend.svg'
-import webdev from './webdev.svg'
-import typing from './typing.svg'
-import dns from './dns.svg'
+import programming from './Interests/programming.svg'
+import frontend from './Interests/frontend.svg'
+import backend from './Interests/backend.svg'
+import webdev from './Interests/webdev.svg'
+import typing from './Interests/typing.svg'
+import dns from './Interests/dns.svg'
+
+import htmlbadge from './badges/html-badge.svg'
+import databasebadge from './badges/database-badge.svg'
+import nodejsbadge from './badges/nodejs-badge.svg'
+import pythonbadge from './badges/python-badge.svg'
+import seleniumbadge from './badges/selenium-badge.svg'
+import tailwindbadge from './badges/tailwind-badge.svg'
+import typescriptbadge from './badges/typescript-badge.svg'
+import reactbadge from './badges/react-badge.svg'
+import wwebjsbadge from './badges/wwebjs-badge.svg'
+
+
 export {
+
+    htmlbadge,
+    reactbadge,
+    typescriptbadge,
+    tailwindbadge,
+    databasebadge,
+    nodejsbadge,
+    pythonbadge,
+    seleniumbadge,
+    wwebjsbadge,
+
+    education,
+    workExperience,
+    certifications,
+    position,
+    source,
+    preview,
     dns,
     typing,
     webdev,
     backend,
     frontend,
     programming,
+
     arrowRight,
     cheveronRight,
     chevronLeft,
@@ -63,6 +97,7 @@ export {
     star,
     truckFast,
     twitter,
+
     c,
     javascript,
     python,
@@ -85,10 +120,5 @@ export {
     nginx,
     bash,
     flask,
-    education,
-    workExperience,
-    certifications,
-    position,
-    source,
-    preview,
+
 }
