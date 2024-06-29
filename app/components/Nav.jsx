@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from 'react';
-import headerLogo from '../assets/images/header-logo.svg';
 import hamburger from '../assets/icons/hamburger.svg';
 import { navLinks } from '../constants';
 import Image from 'next/image';

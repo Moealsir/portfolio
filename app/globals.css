@@ -136,26 +136,54 @@ section {
     @apply bg-paradiso-500 w-full min-h-full justify-center items-center flex flex-col mt-4 mb-4;
 }
 
-.nodejs {
+.green-badge {
     background-color: rgba(135, 201, 41, 0.8);
 }
 
-.express {
+.black-badge {
     background-color: rgba(33, 37, 41, 0.8);
 }
 
-.html {
-    background-color: rgba(42, 147, 201, 0.8);
-}
-
-.css {
+.orange-badge {
     background-color: rgba(231, 80, 40, 0.8);
 }
 
-.javascript {
+.yellow-badge {
     background-color: rgba(245, 208, 50, 0.8);
 }
 
-.sqlite {
+.blue-badge {
     background-color: rgba(11, 125, 203, 0.8);
+}
+
+.red-badge {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+.purple-badge {
+    background-color: rgba(128, 0, 128, 0.8);
+}
+
+.pink-badge {
+    background-color: rgba(255, 105, 180, 0.8);
+}
+
+.teal-badge {
+    background-color: rgba(0, 128, 128, 0.8);
+}
+
+.brown-badge {
+    background-color: rgba(139, 69, 19, 0.8);
+}
+
+.gray-badge {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.light-blue-badge {
+    background-color: rgba(173, 216, 230, 0.8);
+}
+
+.lime-badge {
+    background-color: rgba(0, 255, 0, 0.8);
 }

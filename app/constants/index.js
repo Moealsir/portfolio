@@ -1,13 +1,5 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
-import { bash, expressjs, git, github, githubactions, vscode, postman, nginx } from "../assets/icons";
 
-import { mysql, mongodb, sqlite } from "../assets/icons";
-import { nodejs, nextjs, flask } from "../assets/icons";
-import { css, html, tailwind, react } from "../assets/icons";
-import { test1, portfolio, alx, imdb, bettyfixer, twitterout, weatherwave7 } from "../assets/images/";
-import { test2 } from "../assets/images/";
-import { test3 } from "../assets/images/";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -19,13 +11,19 @@ export const navLinks = [
     { href: "#footer", label: "Footer" },
 ];
 
+
+import {c, javascript, python, typescript} from "../assets/icons";
+import { bash, expressjs, git, github, githubactions, vscode, postman, nginx } from "../assets/icons";
+import { mysql, mongodb, sqlite } from "../assets/icons";
+import { nodejs, nextjs, flask } from "../assets/icons";
+import { css, html, tailwind, react } from "../assets/icons";
+
 export const socialMedia = [
     { src: facebook, alt: "facebook logo" },
     { src: twitter, alt: "twitter logo" },
     { src: instagram, alt: "instagram logo" },
 ];
 
-import {c, javascript, python, typescript} from "../assets/icons";
 export const Languages = [
     {alt: "C", src: c},
     {alt: "JavaScript", src: javascript},
@@ -60,89 +58,103 @@ export const Tools = [
     {alt: "VS Code", src: vscode},
     {alt: "Postman", src: postman},
     {alt: "Nginx", src: nginx},
-
+    
     {alt: "Bash", src: bash}
 ]
 
+import { htmlbadge, reactbadge, typescriptbadge, tailwindbadge, databasebadge, nodejsbadge, pythonbadge, seleniumbadge, wwebjsbadge } from "../assets/icons";
+import { portfolio, alx, imdb, bettyfixer, twitterout, weatherwave7 } from "../assets/images/";
 export const projectData = [
     {
-      title: 'Portfolio',
-      description: 'Single Page Responsive Portfolio Website Using react and tailwindcss. Compatible with all mobile devices, with a beautiful and pleasant user interface',
-      imgSrc: {src: portfolio, alt: "Poerfolio"},
-      repo: 'https://github.com/Moealsir/portfolio',
-      link: 'https://moealsir.github.io',
-      year: '06-2024',
-      used: [
-         {name: "HTML", src: html, bgClass: "html"},
-         {name: "Tailwind CSS", src: tailwind, bgClass: "javascript"},
-         {name: "React", src: react, bgClass: "express"}
+        title: 'Portfolio',
+        description: 'Single Page Responsive Portfolio Website Using react and tailwindcss. Compatible with all mobile devices, with a beautiful and pleasant user interface',
+        imgSrc: { src: portfolio, alt: "Portfolio" },
+        repo: 'https://github.com/Moealsir/portfolio',
+        link: 'https://moealsir.github.io',
+        year: '06-2024',
+        used: [
+            { name: "Next Js", src: nextjs, bgClass: "green-badge" },
+            { name: "React", src: reactbadge, bgClass: "black-badge" },
+            { name: "HTML", src: htmlbadge, bgClass: "orange-badge" },
+            { name: "Tailwind CSS", src: tailwindbadge, bgClass: "teal-badge" },
         ],
     },
     {
         title: 'WeatherWave7',
         description: 'WeatherWave7 is a cutting-edge weather forecasting application that provides real-time weather updates and forecasts for locations worldwide. Designed with a user-friendly interface, it ensures a seamless experience for users across all devices. Utilizing the latest in meteorological technology, WeatherWave delivers accurate and detailed weather information, helping users stay prepared for any conditions.',
-        imgSrc: {src: weatherwave7, alt: "test1"},
+        imgSrc: { src: weatherwave7, alt: "WeatherWave7" },
         repo: 'https://github.com/Moealsir/WeatherWave7/',
         link: 'https://moealsir.github.io/get_started',
         year: '2024',
-        used: [{name: "Next Js", src: nextjs, bgClass: "html"},
-         {name: "HTML", src: html, bgClass: "html"},
-         {name: "Tailwind CSS", src: tailwind, bgClass: "html"},
-         {name: "TypeScript", src: typescript, bgClass: "html"},
-         {name: "React", src: react, bgClass: "html"}],
+        used: [
+            { name: "Next Js", src: nextjs, bgClass: "green-badge" },
+            { name: "React", src: reactbadge, bgClass: "black-badge" },
+            { name: "HTML", src: htmlbadge, bgClass: "orange-badge" },
+            { name: "Tailwind CSS", src: tailwindbadge, bgClass: "teal-badge" },
+            { name: "TypeScript", src: typescriptbadge, bgClass: "blue-badge" },
+        ],
     },
     {
         title: 'IMDB Top 250 Scraper',
         description: 'The IMDB Top 250 Scraper is a Python project that extracts detailed info on the top 250 IMDB movies, including titles, ratings, cast, crew, and storylines. Using Selenium and BeautifulSoup, it exports data to JSON, Excel, XML, and CSV for easy analysis and storage, providing seamless access to IMDB\'s top 250 list.',
-        imgSrc: {src: imdb, alt: "test1"},
+        imgSrc: { src: imdb, alt: "IMDB Top 250 Scraper" },
         repo: 'https://github.com/Moealsir/imdb_scraper',
-        link: '#!',
+        link: '',
         year: '2024',
-        used: [{name: "Python", src: css, bgClass: "html"},
-            {name: "Database", src: html, bgClass: "html"},
-            {name: "Selenium", src: tailwind, bgClass: "html"},
-            {name: "Web Scraping", src: react, bgClass: "html"}],
+        used: [
+            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
+            { name: "Database", src: htmlbadge, bgClass: "black-badge" },
+            { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
+            { name: "Web Scraping", src: htmlbadge, bgClass: "purple-badge" },
+        ],
     },
     {
         title: 'Project Detail Reminder Automation',
         description: 'Automate project detail extraction and reminders using Selenium for web scraping and a WhatsApp bot built with JavaScript and Node.js using whatsapp-web.js. This tool fetches current and upcoming project details, sending reminders via terminal or WhatsApp. It optimizes workflow and organization efficiently.',
-        imgSrc: {src: alx, alt: "test1"},
+        imgSrc: { src: alx, alt: "Project Detail Reminder Automation" },
         repo: 'https://github.com/Moealsir/portfolio',
-        link: '#!',
+        link: '',
         year: '2024',
-        used: [{name: "Python", src: css, bgClass: "html"},
-         {name: "Node Js", src: html, bgClass: "html"},
-         {name: "Selenium", src: tailwind, bgClass: "html"},
-         {name: "Web Scraping", src: react, bgClass: "html"},
-         {name: "whatsapp web js", src: react, bgClass: "html"}],
+        used: [
+            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
+            { name: "Node Js", src: nodejsbadge, bgClass: "green-badge" },
+            { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
+            { name: "Web Scraping", src: htmlbadge, bgClass: "purple-badge" },
+            { name: "whatsapp web js", src: htmlbadge, bgClass: "teal-badge" },
+        ],
     },
     {
         title: 'Twitter Bot Checker',
         description: 'Create a Twitter bot converting user data to JSON and Excel. Extracted: Username, Availability, DM Type, Account Type, Verification',
-        imgSrc: {src: twitterout, alt: "test1"},
+        imgSrc: { src: twitterout, alt: "Twitter Bot Checker" },
         repo: '',
-        link: '#!',
+        link: '',
         year: '2024',
-        used: [{name: "Python", src: css, bgClass: "html"},
-         {name: "Node js", src: html, bgClass: "html"},
-         {name: "Selenium", src: tailwind, bgClass: "html"},
-         {name: "Web Scraping", src: react, bgClass: "html"},
-         {name: "Data Extraction", src: react, bgClass: "html"}],
+        used: [
+            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
+            { name: "Node js", src: nodejsbadge, bgClass: "green-badge" },
+            { name: "Selenium", src: htmlbadge, bgClass: "green-badge" },
+            { name: "Web Scraping", src: htmlbadge, bgClass: "purple-badge" },
+            { name: "Data Extraction", src: htmlbadge, bgClass: "red-badge" },
+        ],
     },
     {
         title: 'BettyFixer',
         description: 'Betty Fixer is a tool designed to automatically fix coding style issues in C files based on the Betty coding style guidelines. It performs corrections to ensure that the code complies with the Betty style, making it more readable and consistent.',
-        imgSrc: {src: bettyfixer, alt: "test1"},
-        repo: '',
-        link: '#!',
+        imgSrc: { src: bettyfixer, alt: "BettyFixer" },
+        repo: 'https://github.com/Moealsir/betty_fixer',
+        link: '',
         year: '2024',
-        used: [{name: "Python", src: css, bgClass: "html"},
-         {name: "Node js", src: html, bgClass: "html"},
-         {name: "Selenium", src: tailwind, bgClass: "html"},
-         {name: "Web Scraping", src: react, bgClass: "html"},
-         {name: "Data Extraction", src: react, bgClass: "html"}],
+        used: [
+            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
+            { name: "Node js", src: nodejsbadge, bgClass: "green-badge" },
+            { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
+            { name: "Web Scraping", src: html, bgClass: "purple-badge" },
+            { name: "Data Extraction", src: html, bgClass: "red-badge" },
+        ],
     }
-  ];
+];
+
 
 export const Education = [
     {

@@ -50,7 +50,7 @@ const About = () => {
             />
           </div>
           <div className="lg:w-[600px] max-sm:w-full md:w-[400px] p-4">
-            <p className="text-justify text-white font-bold text-2xl">
+            <p className="text-start text-white font-bold text-2xl">
               Hello, I&apos;m Mohamed Suliman pursuing{" "}
               <span className="text-paradiso-950">computer engineering</span>{" "}
               from Don Bosco Institute of Technology. Previously I have

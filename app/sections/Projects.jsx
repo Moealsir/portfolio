@@ -9,7 +9,10 @@ const Projects = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.1 });
 
   return (
-    <section id="projects" className="sections padding-x max-container max-sm:pr-4 max-sm:pl-4">
+    <section
+      id="projects"
+      className="sections padding-x max-container max-sm:pr-4 max-sm:pl-4"
+    >
       <div className="flex flex-col items-start mb-4 lg:mb-10">
         <h1 className="section-heading pt-8">Projects</h1>
       </div>
@@ -22,13 +25,13 @@ const Projects = () => {
             key={index}
             className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4"
           >
-          <figure className="project-figure w-full">
-            <img
-              src={project.imgSrc.src.src}
-              alt={project.imgSrc.src.alt}
-              className="rounded-xl bg-white w-full items-start h-[300px] project-img project-figure hover:scale-110"
-            />
-          </figure>
+            <figure className="project-figure w-full">
+              <img
+                src={project.imgSrc.src.src}
+                alt={project.imgSrc.src.alt}
+                className="rounded-xl bg-white w-full items-start h-[300px] project-img project-figure hover:scale-110"
+              />
+            </figure>
             <div className="flex flex-col justify-between lg:w-[500px] sm:w-full max-sm:w-full">
               <div>
                 <div className="text-white flex justify-between items-center w-full p-2">
@@ -50,8 +53,12 @@ const Projects = () => {
                       alt="View Code"
                       width={48}
                       height={48}
-                      className="cursor-pointer source-icon hover:opacity-75"
-                      onClick={() => window.open(project.link)}
+                      className={`cursor-pointer source-icon hover:opacity-75 ${
+                        project.link === "" ? "hidden" : ""
+                      }`}
+                      onClick={() =>
+                        project.link !== "" && window.open(project.link)
+                      }
                       style={{ filter: "invert(1)" }}
                     />
                   </div>
@@ -66,6 +73,7 @@ const Projects = () => {
                         src={lang.src.src}
                         alt={lang.src.alt}
                         className="h-4 w-4 filter-white"
+                        style={{ filter: "invert(1)" }}
                       />
                       <p className="text-[0.8rem] font-bold text-white cursor-default text-nowrap">
                         {lang.name}
@@ -74,8 +82,8 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="text-justify pt-2">
-                  <p className="justify-start text-justify px-2 mb-4 font-montserrat text-slate-gray text-xl leading-7">
+                <div className="text-start pt-2">
+                  <p className="justify-start text-start px-2 mb-4 font-montserrat text-slate-gray text-xl leading-7">
                     {project.description}
                   </p>
                 </div>
