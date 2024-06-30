@@ -19,7 +19,7 @@ const About = () => {
           </h1>
         </div>
 
-        <div className="flex gap-40 mb-10">
+        <div className="flex max-sm:flex-col max-sm:gap-10 sm:gap-10 md:gap-20 lg:gap-40 mb-10">
           <div style={{ opacity: 1, transform: "none", filter: "invert(1)" }}>
             <h4 className="font-bold text-primary text-2xl">Contact</h4>
             <div className="mt-3 flex flex-col gap-[6.4px] text-[16px] font-normal md:text-[17.6px]">
