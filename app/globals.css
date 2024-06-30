@@ -52,8 +52,6 @@ border-radius: 50% !important;
 
 
 .project-img {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   max-width: 100%;
 
@@ -96,8 +94,8 @@ section {
     white-space: nowrap;
     height: 28px;
     display: flex;
-    align-items: center; /* Centers the text vertically */
-    justify-content: center; /* Centers the text horizontally */
+    align-items: center;
+    justify-content: center;
 }
 
 /* styles.css or equivalent */
@@ -136,54 +134,8 @@ section {
     @apply bg-paradiso-500 w-full min-h-full justify-center items-center flex flex-col mt-4 mb-4;
 }
 
-.green-badge {
-    background-color: rgba(135, 201, 41, 0.8);
-}
 
-.black-badge {
-    background-color: rgba(33, 37, 41, 0.8);
-}
 
-.orange-badge {
-    background-color: rgba(231, 80, 40, 0.8);
-}
-
-.yellow-badge {
-    background-color: rgba(245, 208, 50, 0.8);
-}
-
-.blue-badge {
-    background-color: rgba(11, 125, 203, 0.8);
-}
-
-.red-badge {
-    background-color: rgba(255, 99, 71, 0.8);
-}
-
-.purple-badge {
-    background-color: rgba(128, 0, 128, 0.8);
-}
-
-.pink-badge {
-    background-color: rgba(255, 105, 180, 0.8);
-}
-
-.teal-badge {
-    background-color: rgba(0, 128, 128, 0.8);
-}
-
-.brown-badge {
-    background-color: rgba(139, 69, 19, 0.8);
-}
-
-.gray-badge {
-    background-color: rgba(128, 128, 128, 0.8);
-}
-
-.light-blue-badge {
-    background-color: rgba(173, 216, 230, 0.8);
-}
-
-.lime-badge {
-    background-color: rgba(0, 255, 0, 0.8);
+.badge {
+   @apply flex gap-1 items-center text-center shadow-md rounded-lg ring-1 ring-black ring-opacity-20 py-1 px-2
 }

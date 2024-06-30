@@ -10,7 +10,8 @@ import shieldTick from './shield-tick.svg'
 import star from './star.svg'
 import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
-
+import linkedin from './linkedin.svg'
+import whatsapp from './whatsapp.svg'
 
 import c from './Skills/c.svg'
 import javascript from './Skills/java-script.svg'
@@ -97,6 +98,8 @@ export {
     star,
     truckFast,
     twitter,
+    linkedin,
+    whatsapp,
 
     c,
     javascript,

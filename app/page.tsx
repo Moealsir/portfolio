@@ -7,7 +7,6 @@ const Skills = dynamic(() => import('./sections/Skills'), { ssr: false });
 const Resume = dynamic(() => import('./sections/Resume'), { ssr: false });
 const Projects = dynamic(() => import('./sections/Projects'), { ssr: false });
 const Contact = dynamic(() => import('./sections/Contact'), { ssr: false });
-
 export default function Home() {
   return (
     <main className="relative bg-paradiso-500">

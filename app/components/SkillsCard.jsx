@@ -5,6 +5,7 @@ import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import Image from "next/image";
 import useIntersectionObserver from "./ui/useIntersectionObserver";
 import { Languages, Frontend, Backend, Database, Tools } from "../constants";
+import { Tooltip } from "@chakra-ui/react";
 
 const skillsCategories = {
   Languages,
@@ -24,7 +25,9 @@ const CustomCard = ({ title, className }) => {
       className={`scroll-element p-4 flex flex-col bg-paradiso-700 rounded-lg hover:shadow-2xl ${className}`}
     >
       <CardHeader className="pb-2 mb-4 flex-col items-center">
-        <h4 ref={cardRef} className="font-bold text-4xl text-center text-white">{title}</h4>
+        <h4 ref={cardRef} className="font-bold text-4xl text-center text-white">
+          {title}
+        </h4>
       </CardHeader>
       <CardBody className="grid grid-cols-4 gap-6 justify-items-center items-center">
         {title === "Languages" && (
@@ -39,7 +42,7 @@ const CustomCard = ({ title, className }) => {
                 width={60}
                 height={60}
                 style={{ height: "auto" }}
-              />
+              />  
             </div>
             <div
               className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
