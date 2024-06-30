@@ -6,9 +6,10 @@ import { Languages, Frontend, Backend, Database, Tools, Interests } from "../con
 import useIntersectionObserver from "../components/ui/useIntersectionObserver";
 import educationIcon from "../assets/icons/education.svg";
 import ResumeCard from "../components/ResumeCard";
+import profile from "../assets/images/me.jpeg"
 
 const About = () => {
-  const h1Ref = useIntersectionObserver({ threshold: 0.5 });
+  const h1Ref = useIntersectionObserver({ threshold: 0.2 });
   const imgRef = useRef(null);
 
   useEffect(() => {
@@ -40,13 +41,15 @@ const About = () => {
       </div>
 
       <div className="flex flex-col bg-paradiso-600 p-2 rounded-xl shadow-lg">
-        <div className="flex flex-col md:flex-row md:gap-10 lg:gap-40 lg:mx-6 justify-center items-center">
+        <div className="flex flex-col md:flex-row md:gap-10 lg:gap-20 lg:mx-6 justify-center items-center">
           <div className="flex justify-center items-center p-0 ">
-            <img
+            <Image
               ref={imgRef}
               className="rounded-circle profile-img profile-move border-8 border-paradiso-400 w-[270px] h-[270px] max-sm:mt-4 sm:mt-4 sm:mb-4 max-sm:mb-4"
-              src="https://up6.cc/2024/06/171772528380021.jpg"
-              alt="Boris Profile Picture"
+              src={profile}
+              alt="Mohamed Suliman Picture"
+              width={270}
+              height={270}
             />
           </div>
           <div className="lg:w-[600px] max-sm:w-full md:w-[400px] p-4">
