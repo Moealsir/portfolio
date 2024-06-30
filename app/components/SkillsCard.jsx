@@ -22,7 +22,7 @@ const CustomCard = ({ title, className }) => {
   return (
     <Card
       ref={cardRef}
-      className={`scroll-element p-4 flex flex-col bg-paradiso-700 rounded-lg hover:shadow-2xl ${className}`}
+      className={`scroll-element p-4 flex flex-col bg-paradiso-700 rounded-lg hover:shadow-md ${className}`}
     >
       <CardHeader className="pb-2 mb-4 flex-col items-center">
         <h4 ref={cardRef} className="font-bold text-4xl text-center text-white">
@@ -33,7 +33,7 @@ const CustomCard = ({ title, className }) => {
         {title === "Languages" && (
           <>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105 w-[2px]"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-sm hover:scale-105 w-[2px]"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -45,7 +45,7 @@ const CustomCard = ({ title, className }) => {
               />  
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-sm hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -57,7 +57,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -69,7 +69,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -85,7 +85,7 @@ const CustomCard = ({ title, className }) => {
         {title === "Frontend" && (
           <>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -97,7 +97,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -109,7 +109,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -121,7 +121,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -137,7 +137,7 @@ const CustomCard = ({ title, className }) => {
         {title === "Backend" && (
           <>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -149,7 +149,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -161,7 +161,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -177,7 +177,7 @@ const CustomCard = ({ title, className }) => {
         {title === "Database" && (
           <>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -189,7 +189,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -201,7 +201,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -217,7 +217,7 @@ const CustomCard = ({ title, className }) => {
         {title === "Tools" && (
           <>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -229,7 +229,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -241,7 +241,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -253,7 +253,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -265,7 +265,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -277,7 +277,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
@@ -289,7 +289,7 @@ const CustomCard = ({ title, className }) => {
               />
             </div>
             <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-xl hover:scale-105"
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
               style={{ width: "60px", height: "60px" }}
             >
               <Image
