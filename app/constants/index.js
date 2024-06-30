@@ -1,4 +1,5 @@
 import { facebook, instagram, twitter, linkedin, whatsapp } from "../assets/icons";
+import { programming, frontend, backend, webdev, typing, dns, datafetch, scrap, automation } from "../assets/icons/index.js";
 
 
 export const navLinks = [
@@ -108,7 +109,7 @@ export const projectData = [
             { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
             { name: "Database", src: htmlbadge, bgClass: "black-badge" },
             { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: htmlbadge, bgClass: "purple-badge" },
+            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
         ],
     },
     {
@@ -122,8 +123,8 @@ export const projectData = [
             { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
             { name: "Node Js", src: nodejsbadge, bgClass: "green-badge" },
             { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: htmlbadge, bgClass: "purple-badge" },
-            { name: "whatsapp web js", src: htmlbadge, bgClass: "teal-badge" },
+            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
+            { name: "whatsapp web js", src: wwebjsbadge, bgClass: "teal-badge" },
         ],
     },
     {
@@ -137,8 +138,8 @@ export const projectData = [
             { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
             { name: "Node js", src: nodejsbadge, bgClass: "green-badge" },
             { name: "Selenium", src: htmlbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: htmlbadge, bgClass: "purple-badge" },
-            { name: "Data Extraction", src: htmlbadge, bgClass: "red-badge" },
+            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
+            { name: "Data Extraction", src: datafetch, bgClass: "red-badge" },
         ],
     },
     {
@@ -152,8 +153,8 @@ export const projectData = [
             { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
             { name: "Node js", src: nodejsbadge, bgClass: "green-badge" },
             { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: html, bgClass: "purple-badge" },
-            { name: "Data Extraction", src: html, bgClass: "red-badge" },
+            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
+            { name: "Data Extraction", src: datafetch, bgClass: "red-badge" },
         ],
     }
 ];
@@ -208,7 +209,6 @@ export const Position = [
 ]
 
 import educationIcon from "../assets/icons/education.svg";
-import { programming, frontend, backend, webdev, typing, dns } from "../assets/icons/index.js";
 
 export const Interests = [
     {
@@ -229,15 +229,15 @@ export const Interests = [
     },
     {
         title: "Scraping",
-        icon: educationIcon,
+        icon: scrap,
     },
     {
         title: "Data Fetching",
-        icon: educationIcon,
+        icon: datafetch,
     },
     {
-        title: "Automating",
-        icon: educationIcon,
+        title: "Automation",
+        icon: automation,
     },
     {
         title: "Domain & DNS",
