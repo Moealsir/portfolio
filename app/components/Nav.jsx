@@ -50,8 +50,8 @@ const Nav = () => {
                             <a
                                 href={item.href}
                                 className={`font-montserrat leading-normal text-2xl transition-colors transition-font-weight duration-300 ${
-                                    activeLink === item.label ? 'font-bold text-paradiso-950' : navTextColorClass
-                                } hover:font-bold hover:text-paradiso-950`}
+                                    activeLink === item.label ? 'font-bold text-paradiso-700' : navTextColorClass
+                                } hover:font-bold hover:text-paradiso-700`}
                                 onClick={() => handleClick(item.label)}
                                 style={{ display: 'inline-block', width: 'max-content' }}
                             >
