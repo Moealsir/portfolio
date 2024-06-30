@@ -1,4 +1,4 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
+import { facebook, instagram, twitter, linkedin, whatsapp } from "../assets/icons";
 
 
 export const navLinks = [
@@ -8,7 +8,6 @@ export const navLinks = [
     { href: "#resume", label: "Resume" },
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
-    { href: "#footer", label: "Footer" },
 ];
 
 
@@ -19,9 +18,13 @@ import { nodejs, nextjs, flask } from "../assets/icons";
 import { css, html, tailwind, react } from "../assets/icons";
 
 export const socialMedia = [
-    { src: facebook, alt: "facebook logo" },
-    { src: twitter, alt: "twitter logo" },
-    { src: instagram, alt: "instagram logo" },
+    // { src: facebook, alt: "facebook logo", url: "https://facebook.com" },
+    { src: facebook, alt: "facebook logo", url: "https://www.facebook.com/profile.php?id=100084065914928&mibextid=ZbWKwL" },
+    { src: linkedin, alt: "linkedin logo", url: "https://www.linkedin.com/in/mohamed-suliman-27a723259/" },
+    // { src: github, alt: "github logo", url: "https://github.com/Moealsir" },
+    { src: twitter, alt: "twitter logo", url: "https://twitter.com/sonofsecret" },
+    { src: instagram, alt: "instagram logo", url: "https://instagram.com/sonofsecret" },
+    { src: whatsapp, alt: "whatsapp logo", url: "https://api.whatsapp.com/send/?phone=97439900342" },
 ];
 
 export const Languages = [
@@ -165,52 +168,48 @@ export const Education = [
     {
         subject: "Software Engineering",
         school: "ALX Africa",
-        year: "2023 - present",
+        year: "Sep 2023 - present",
     },
 ]
 
 
 export const Certificates = [
     {
-        title: "efecQECQWEfw",
-        by: "sfDSSDFsdf",
-        year: "1230",
+        title: "PLC basic applications",
+        by: "Creative Solutions Co.Ltd",
+        year: "Mar 2021",
     }, 
     {
-        title: "efawE aEQVQefw",
-        by: "sfsdQecqeqecf",
-        year: "1230",
+        title: "Industrial PLC Advance applications",
+        by: "Creative Solutions Co.Ltd",
+        year: "Apr 2021",
     },
-    {
-        title: "qeqwe",
-        by: "SDFADF",
-        year: "1230",
-    }
 ]
 
 export const Experiences = [
     {
-        position: "Software Engineer",
+        position: "Software Engineering Intern",
         company: "ALX Africa",
         year: "2023 - present",
-    }
+    },
 ]
 
 export const Position = [
     {
-        subject: "Bachelor of Science in Computer Science",
-        school: "Sudan International University",
-        year: "2017 - 2022"
+        subject: "Weight Loss Consultant",
+        school: "Hiba Motamad Fitness Center",
+        year: "Jun 2017 – Sep 2017"
     },
     {
-        subject: "Software Engineering",
-        school: "ALX Africa",
-        year: "2023 - present",
+        subject: "Electrical Engineer",
+        school: "Planet Energy",
+        year: "Mar 2022 – 2023",
     },
 ]
 
 import educationIcon from "../assets/icons/education.svg";
 import { programming, frontend, backend, webdev, typing, dns } from "../assets/icons/index.js";
+
 export const Interests = [
     {
         title: "Web Development",
@@ -245,22 +244,6 @@ export const Interests = [
         icon: dns,
     },
 ]   
-
-// export const reviews = [
-//     {
-//         imgURL: customer1,
-//         customerName: 'Morich Brown',
-//         rating: 4.5,
-//         feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
-//     },
-//     {
-//         imgURL: customer2,
-//         customerName: 'Lota Mongeskar',
-//         rating: 4.5,
-//         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-//     }
-// ];
-
 
 export const footerLinks = [
     {
