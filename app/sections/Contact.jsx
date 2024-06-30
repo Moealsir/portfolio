@@ -31,7 +31,7 @@ const About = () => {
                   </span>
                 </a>
               </p>
-              <p>Phone: +97439900342</p>
+              <p>Phone: <a href="tel:+97439900342">+97439900342</a></p>
             </div>
           </div>
           <div style={{ opacity: 1, transform: "none", filter: "invert(1)" }}>
