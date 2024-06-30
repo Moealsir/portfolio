@@ -86,7 +86,7 @@ const Projects = () => {
                 </div>
 
                 <div className="text-start pt-2">
-                  <p className="justify-start text-start px-2 mb-4 font-montserrat text-white text-xl leading-7">
+                  <p className="justify-start text-start px-2 mb-4 font-montserrat text-paradiso-800 text-xl leading-7">
                     {project.description}
                   </p>
                 </div>
