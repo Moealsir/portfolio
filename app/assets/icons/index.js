@@ -43,12 +43,17 @@ import certifications from './certifications.svg'
 import position from './position.svg'
 import source from './source.svg'
 import preview from './preview.svg'
+
+
 import programming from './Interests/programming.svg'
 import frontend from './Interests/frontend.svg'
 import backend from './Interests/backend.svg'
 import webdev from './Interests/webdev.svg'
 import typing from './Interests/typing.svg'
 import dns from './Interests/dns.svg'
+import datafetch from './Interests/datafetch.svg'
+import scrap from './Interests/scrap.svg'
+import automation from './Interests/automate.svg'
 
 import htmlbadge from './badges/html-badge.svg'
 import databasebadge from './badges/database-badge.svg'
@@ -79,6 +84,10 @@ export {
     position,
     source,
     preview,
+
+    datafetch,
+    scrap,
+    automation,
     dns,
     typing,
     webdev,
