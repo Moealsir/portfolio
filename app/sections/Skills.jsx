@@ -12,6 +12,7 @@ import CustomCard from "../components/SkillsCard.jsx";
 import useIntersectionObserver from "../components/ui/useIntersectionObserver";
 import GitHubCalendar from "react-github-calendar";
 
+
 const Skills = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.5 });
 
