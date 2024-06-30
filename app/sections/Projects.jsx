@@ -23,28 +23,26 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="hover:shadow-xl bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col justify-start items-center p-4"
+            className="hover:shadow-md bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col items-center p-4"
           >
-            <figure className="project-figure w-full">
-              <img
-                src={project.imgSrc.src.src}
-                alt={project.imgSrc.src.alt}
-                className="rounded-xl bg-white w-full items-start h-[300px] project-img project-figure hover:scale-110"
-              />
-            </figure>
-            <div className="flex flex-col justify-between lg:w-[500px] sm:w-full max-sm:w-full">
-              <div>
-                <div className="text-white flex justify-between items-center w-full p-2">
-                  <h2 className="text-2xl text-paradiso-200 project-title font-bold">
-                    {project.title}
-                  </h2>
-                  <div className="flex gap-2 ">
+            <div className="w-full flex flex-col justify-between">
+              <figure className="project-figure w-full">
+                <div className="relative group">
+                  <div className="relative">
+                    <img
+                      src={project.imgSrc.src.src}
+                      alt={project.imgSrc.src.alt}
+                      className="rounded-xl w-full items-start h-[300px] project-img project-figure"
+                    />
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
+                  </div>
+                  <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <img
                       src={source.src}
                       alt="Source Code"
                       width={48}
                       height={48}
-                      className="cursor-pointer source-icon hover:opacity-75"
+                      className="cursor-pointer source-icon hover:opacity-75 mx-2"
                       onClick={() => window.open(project.repo)}
                       style={{ filter: "invert(1)" }}
                     />
@@ -53,7 +51,7 @@ const Projects = () => {
                       alt="View Code"
                       width={48}
                       height={48}
-                      className={`cursor-pointer source-icon hover:opacity-75 ${
+                      className={`cursor-pointer source-icon hover:opacity-75 mx-2 ${
                         project.link === "" ? "hidden" : ""
                       }`}
                       onClick={() =>
@@ -63,12 +61,17 @@ const Projects = () => {
                     />
                   </div>
                 </div>
+              </figure>
+
+              <div className="flex flex-col lg:w-[500px] sm:w-full max-sm:w-full">
+                <div className="text-white flex justify-between items-center w-full p-2">
+                  <h2 className="text-2xl text-paradiso-200 project-title font-bold">
+                    {project.title}
+                  </h2>
+                </div>
                 <div className="flex gap-2 max-sm:mb-2 badges-container">
                   {project.used.map((lang, index) => (
-                    <div
-                      key={index}
-                      className={`hover:scale-105 flex gap-1 items-center text-center shadow-md rounded-lg py-1 px-2 ${lang.bgClass}`}
-                    >
+                    <div key={index} className={`badge`}>
                       <img
                         src={lang.src.src}
                         alt={lang.src.alt}
@@ -88,10 +91,10 @@ const Projects = () => {
                   </p>
                 </div>
               </div>
+            </div>
 
-              <div className="flex">
-                <p className="date-badge cursor-default">{project.year}</p>
-              </div>
+            <div className="w-full flex justify-start">
+              <p className="cursor-default badge text-white">{project.year}</p>
             </div>
           </div>
         ))}
