@@ -2,11 +2,18 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import VanillaTilt from "vanilla-tilt";
-import { Languages, Frontend, Backend, Database, Tools, Interests } from "../constants";
+import {
+  Languages,
+  Frontend,
+  Backend,
+  Database,
+  Tools,
+  Interests,
+} from "../constants";
 import useIntersectionObserver from "../components/ui/useIntersectionObserver";
 import educationIcon from "../assets/icons/education.svg";
 import ResumeCard from "../components/ResumeCard";
-import profile from "../assets/images/me.jpeg"
+import profile from "../assets/images/me.jpeg";
 
 const About = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.2 });
@@ -54,50 +61,14 @@ const About = () => {
           </div>
           <div className="lg:w-[600px] max-sm:w-full md:w-[400px] p-4">
             <p className="text-start text-white font-bold text-2xl">
-              Hello, I&apos;m Mohamed Suliman pursuing{" "}
-              <span className="text-paradiso-950">computer engineering</span>{" "}
-              from Don Bosco Institute of Technology. Previously I have
-              qualified Pre-Regional Mathematical Olympiad <span>(PRMO).</span>I
-              have built <span>websites</span> for several NGO&apos;s during my
-              leisure time. Aspiring software developer with an affinity towards{" "}
-              <span>web development</span> and
-              <span>project management</span>
-              <br />
-              When I&apos;m not coding I do touch typing on
-              <a
-                href="https://www.keybr.com/profile/v28on8s"
-                target="_blank"
-                aria-label="keybr link"
-                className="text-paradiso-950 underline"
-              >
-                keybr.com
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  aria-hidden="true"
-                  role="img"
-                  className="iconify iconify--charm"
-                  width="23"
-                  height="23"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 16 16"
-                  data-icon="charm:link-external"
-                  data-width="23"
-                  data-height="23"
-                >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M8.25 2.75h-5.5v10.5h10.5v-5.5m0-5l-5.5 5.5m3-6.5h3.5v3.5"
-                  ></path>
-                </svg>
-                .
-              </a>
-              Once my fingers have given up, I watch some <span>tennis</span>{" "}
-              and <span>formula 1!</span>
+              Hello, I&apos;m Mohamed Suliman, I studied <span className="text-paradiso-900">electrical engineering </span>
+              at Sudan International University and worked in the field of <span className="text-paradiso-900">
+              solar
+              energy</span> after my graduation. I participated in many volunteer
+              programs in Qatar. I spend my free time writing codes to <span className="text-paradiso-900"> solve
+              real problems or to design programs </span> that can make life easier. I
+              love <span className="text-paradiso-900">automation</span>.  I am ready to automate everything. I&apos;m an
+              ambitious <span className="text-paradiso-900">full stack developer</span> with an affinity towards <span className="text-paradiso-900">web development</span>. When I&apos;m not coding I love to play video games.
             </p>
           </div>
         </div>
@@ -108,7 +79,11 @@ const About = () => {
         </h3>
         <div className="scroll-element animate grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:scale-90 gap-4 mb-6 max-sm:gap-1 md:pr-4 md:pl-4 ">
           {Interests.map((interest, index) => (
-            <ResumeCard key={index} icon={interest.icon} title={interest.title} />
+            <ResumeCard
+              key={index}
+              icon={interest.icon}
+              title={interest.title}
+            />
           ))}
         </div>
       </div>
