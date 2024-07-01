@@ -22,7 +22,7 @@ export const socialMedia = [
     // { src: facebook, alt: "facebook logo", url: "https://facebook.com" },
     { src: facebook, alt: "facebook logo", url: "https://www.facebook.com/profile.php?id=100084065914928&mibextid=ZbWKwL" },
     { src: linkedin, alt: "linkedin logo", url: "https://www.linkedin.com/in/mohamed-suliman-27a723259/" },
-    // { src: github, alt: "github logo", url: "https://github.com/Moealsir" },
+    { src: github, alt: "github logo", url: "https://github.com/Moealsir" },
     { src: twitter, alt: "twitter logo", url: "https://twitter.com/sonofsecret" },
     { src: instagram, alt: "instagram logo", url: "https://instagram.com/sonofsecret" },
     { src: whatsapp, alt: "whatsapp logo", url: "https://api.whatsapp.com/send/?phone=97439900342" },
@@ -176,9 +176,9 @@ export const projectData = [
 
 export const Education = [
     {
-        subject: "Bachelor of Science in Computer Science",
+        subject: "Bachelor of Science in Control System Engineering",
         school: "Sudan International University",
-        year: "2017 - 2022"
+        year: "Oct 2017 - May 2022"
     },
     {
         subject: "Software Engineering",
@@ -211,14 +211,9 @@ export const Experiences = [
 
 export const Position = [
     {
-        subject: "Weight Loss Consultant",
-        school: "Hiba Motamad Fitness Center",
-        year: "Jun 2017 – Sep 2017"
-    },
-    {
         subject: "Electrical Engineer",
         school: "Planet Energy",
-        year: "Mar 2022 – 2023",
+        year: "Mar 2022 – Apr 2023",
     },
 ]
 
