@@ -78,10 +78,11 @@ export const projectData = [
         link: 'https://moealsir.github.io',
         year: '06-2024',
         used: [
-            { name: "Next Js", src: nextjs, bgClass: "green-badge" },
-            { name: "React", src: reactbadge, bgClass: "black-badge" },
-            { name: "HTML", src: htmlbadge, bgClass: "orange-badge" },
-            { name: "Tailwind CSS", src: tailwindbadge, bgClass: "teal-badge" },
+            { name: "Next Js", src: nextjs },
+            { name: "React", src: reactbadge },
+            { name: "HTML", src: htmlbadge },
+            { name: "TypeScript", src: typescriptbadge },
+            { name: "Tailwind CSS", src: tailwindbadge },
         ],
     },
     {
@@ -92,11 +93,11 @@ export const projectData = [
         link: 'https://moealsir.github.io/get_started',
         year: '2024',
         used: [
-            { name: "Next Js", src: nextjs, bgClass: "green-badge" },
-            { name: "React", src: reactbadge, bgClass: "black-badge" },
-            { name: "HTML", src: htmlbadge, bgClass: "orange-badge" },
-            { name: "Tailwind CSS", src: tailwindbadge, bgClass: "teal-badge" },
-            { name: "TypeScript", src: typescriptbadge, bgClass: "blue-badge" },
+            { name: "Next Js", src: nextjs},
+            { name: "React", src: reactbadge },
+            { name: "HTML", src: htmlbadge },
+            { name: "Tailwind CSS", src: tailwindbadge },
+            { name: "TypeScript", src: typescriptbadge },
         ],
     },
     {
@@ -113,10 +114,10 @@ export const projectData = [
         link: '',
         year: '2024',
         used: [
-            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
-            { name: "Database", src: htmlbadge, bgClass: "black-badge" },
-            { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
+            { name: "Python", src: pythonbadge },
+            { name: "Database", src: htmlbadge },
+            { name: "Selenium", src: seleniumbadge },
+            { name: "Web Scraping", src: scrap },
         ],
     },
     {
@@ -131,11 +132,11 @@ export const projectData = [
         link: '',
         year: '2024',
         used: [
-            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
-            { name: "Node Js", src: nodejsbadge, bgClass: "green-badge" },
-            { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
-            { name: "whatsapp web js", src: wwebjsbadge, bgClass: "teal-badge" },
+            { name: "Python", src: pythonbadge },
+            { name: "Node Js", src: nodejsbadge },
+            { name: "Selenium", src: seleniumbadge },
+            { name: "Web Scraping", src: scrap },
+            { name: "whatsapp web js", src: wwebjsbadge },
         ],
     },
     {
@@ -149,11 +150,11 @@ export const projectData = [
         link: '',
         year: '2024',
         used: [
-            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
-            { name: "Node js", src: nodejsbadge, bgClass: "green-badge" },
-            { name: "Selenium", src: htmlbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
-            { name: "Data Extraction", src: datafetch, bgClass: "red-badge" },
+            { name: "Python", src: pythonbadge },
+            { name: "Node js", src: nodejsbadge },
+            { name: "Selenium", src: htmlbadge },
+            { name: "Web Scraping", src: scrap },
+            { name: "Data Extraction", src: datafetch },
         ],
     },
     {
@@ -164,11 +165,11 @@ export const projectData = [
         link: '',
         year: '2024',
         used: [
-            { name: "Python", src: pythonbadge, bgClass: "blue-badge" },
-            { name: "Node js", src: nodejsbadge, bgClass: "green-badge" },
-            { name: "Selenium", src: seleniumbadge, bgClass: "green-badge" },
-            { name: "Web Scraping", src: scrap, bgClass: "purple-badge" },
-            { name: "Data Extraction", src: datafetch, bgClass: "red-badge" },
+            { name: "Python", src: pythonbadge },
+            { name: "Node js", src: nodejsbadge },
+            { name: "Selenium", src: seleniumbadge },
+            { name: "Web Scraping", src: scrap },
+            { name: "Data Extraction", src: datafetch },
         ],
     }
 ];
