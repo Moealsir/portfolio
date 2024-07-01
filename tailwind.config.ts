@@ -1,3 +1,4 @@
+import { Dancing_Script } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,6 +16,17 @@ const config: Config = {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         corinthia: ['Corinthia', 'serif'],
+        cookie: ['cookie', 'serif'],
+        satisfy: ['Satisfy', 'cursive'],
+        Dancing_Script: ["Dancing Script", "cursive"],
+        Courgette: ["Courgette", "cursive"],
+        Great_Vibes: ["Great Vibes", "cursive"],
+        Merienda: ["Merienda", "cursive"],
+        Pacifico: ["Pacifico", "cursive"],
+        Shadows_Into_Light: ["Shadows Into Light", "cursive"],
+        Tangerine: ["Tangerine", "cursive"],
+        Yellowtail: ["Yellowtail", "cursive"],
+        custom: ["Signika Negative", "sans-serif"],
       },
       colors: {
         'paradiso': {
@@ -53,6 +65,9 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      animation: {
+        "bounce-slow": "bounceslow 5s ease infinite",
       },
     },
   },
