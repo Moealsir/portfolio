@@ -23,8 +23,8 @@ const CustomCard = ({ title, className }) => {
       ref={cardRef}
       className={`scroll-element p-4 flex flex-col bg-paradiso-700 rounded-lg hover:shadow-md ${className}`}
     >
-      <CardHeader className="pb-2 mb-4 flex-col items-center">
-        <h4 ref={cardRef} className="font-bold text-4xl text-center text-white">
+      <CardHeader className="pb-2 mb-4 max-sm:mb-2 flex-col items-center">
+        <h4 ref={cardRef} className="font-bold text-4xl max-sm:text-2xl text-center text-white">
           {title}
         </h4>
       </CardHeader>

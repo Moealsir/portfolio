@@ -3,9 +3,7 @@ import React from "react";
 import { projectData } from "../constants/index.js";
 import useIntersectionObserver from "../components/ui/useIntersectionObserver.js";
 import { preview, source } from "../assets/icons";
-import { Image } from "@nextui-org/image";
 import SimpleImageSlider from "react-simple-image-slider";
-
 
 const Projects = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.05 });
@@ -16,11 +14,11 @@ const Projects = () => {
       className="sections padding-x max-container max-sm:pr-4 max-sm:pl-4"
     >
       <div className="flex flex-col items-start mb-4 lg:mb-10">
-        <h1 className="section-heading pt-8">Projects</h1>
+        <h1 className="section-heading pt-8 max-sm:text-4xl">Projects</h1>
       </div>
       <div
         ref={h1Ref}
-        className="scroll-element animate grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 mb-6 max-sm:gap-10 md:pr-4 md:pl-4 "
+        className="scroll-element animate grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 mb-6 max-sm:gap-10 md:pr-4 md:pl-4 max-sm:pr-8 max-sm:pl-8 "
       >
         {projectData.map((project, index) => (
           <div
@@ -30,9 +28,9 @@ const Projects = () => {
             <div className="w-full flex flex-col justify-between">
               <figure className="project-figure w-full">
                 <div className="relative group">
-                  <div className="relative">
-                  <SimpleImageSlider
-                      width={500}
+                  <div className="relative image-slider-container">
+                    <SimpleImageSlider
+                      width="100%"
                       height={300}
                       images={project.imgSrc}
                       showBullets={project.imgSrc.length > 1}

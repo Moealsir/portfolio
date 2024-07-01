@@ -132,10 +132,22 @@ section {
 }
 
 .sections {
-    @apply bg-paradiso-500 w-full min-h-full justify-center items-center flex flex-col mt-4 mb-4;
+    @apply bg-paradiso-500 w-full min-h-full justify-center items-center flex flex-col mt-4 mb-4 max-sm:mt-0 max-sm:mb-4;
 }
 
-
+.image-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-slider-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
 
 .badge {
    @apply flex gap-1 items-center text-center shadow-md rounded-lg ring-1 ring-black ring-opacity-20 py-1 px-2

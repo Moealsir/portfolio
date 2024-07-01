@@ -17,13 +17,13 @@ const Skills = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.5 });
 
   return (
-    <section id="skills" className='sections padding-x  max-container max-sm:pr-4 max-sm:pl-4'>
-      <div className="flex flex-col items-start mb-16">
-        <h1 className="section-heading pt-8">
+    <section id="skills" className='sections max-sm:pr-8 max-sm:pl-8'>
+      <div className="flex flex-col items-start mb-16 max-sm:mb-6 max-sm:mt-4">
+        <h1 className="section-heading pt-8 max-sm:pt-0 max-sm:text-4xl">
           Skills
         </h1>
       </div>
-      <div className="grid grid-cols-2 sm:scale-90 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4 lg:mb-0 xl:mb-10 lg:scale-110">
+      <div className="grid grid-cols-2 sm:scale-90 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 lg:mb-0 xl:mb-10 lg:scale-110">
         <div className="languages">
           <CustomCard title="Languages" sect={Languages} />
         </div>
