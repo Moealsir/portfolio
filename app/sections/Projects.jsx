@@ -4,9 +4,11 @@ import { projectData } from "../constants/index.js";
 import useIntersectionObserver from "../components/ui/useIntersectionObserver.js";
 import { preview, source } from "../assets/icons";
 import { Image } from "@nextui-org/image";
+import SimpleImageSlider from "react-simple-image-slider";
+
 
 const Projects = () => {
-  const h1Ref = useIntersectionObserver({ threshold: 0.1 });
+  const h1Ref = useIntersectionObserver({ threshold: 0.05 });
 
   return (
     <section
@@ -29,10 +31,13 @@ const Projects = () => {
               <figure className="project-figure w-full">
                 <div className="relative group">
                   <div className="relative">
-                    <img
-                      src={project.imgSrc.src.src}
-                      alt={project.imgSrc.src.alt}
-                      className="rounded-xl w-full items-start h-[300px] project-img project-figure"
+                  <SimpleImageSlider
+                      width={500}
+                      height={300}
+                      images={project.imgSrc}
+                      showBullets={true}
+                      // showNavs={true}
+                      autoPlay={true}
                     />
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
                   </div>
