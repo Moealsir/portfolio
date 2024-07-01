@@ -23,7 +23,7 @@ const Skills = () => {
           Skills
         </h1>
       </div>
-      <div className="grid grid-cols-2 sm:scale-90 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 the-skills mb-4 lg:mb-0 xl:mb-10 lg:scale-110">
+      <div className="grid grid-cols-2 sm:scale-90 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4 lg:mb-0 xl:mb-10 lg:scale-110">
         <div className="languages">
           <CustomCard title="Languages" sect={Languages} />
         </div>
