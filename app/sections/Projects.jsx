@@ -13,7 +13,7 @@ const Projects = () => {
       id="projects"
       className="sections padding-x max-container max-sm:pr-4 max-sm:pl-4"
     >
-      <div className="flex flex-col items-start mb-4 lg:mb-10">
+      <div className="flex flex-col items-start mb-10">
         <h1 className="section-heading pt-8 max-sm:text-4xl">Projects</h1>
       </div>
       <div
@@ -23,7 +23,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="hover:shadow-md bg-paradiso-400 bg-opacity-90 rounded-xl flex flex-col items-center p-4"
+            className="hover:shadow-md bg-paradiso-400 md:w-[500px] bg-opacity-90 rounded-xl flex flex-col items-center p-4"
           >
             <div className="w-full flex flex-col justify-between">
               <figure className="project-figure w-full">
