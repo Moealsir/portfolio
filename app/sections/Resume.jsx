@@ -19,7 +19,7 @@ const Resume = () => {
           Resume
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row justify-start items-start max-sm:items-center gap-10 max-sm:gap-2 md:flex-col">
+      <div className="flex flex-col lg:flex-row justify-start items-start max-sm:items-center lg:gap-10 max-sm:gap-2 sm:flex-col">
         <div className="w-full lg:w-1/2">
           <ResumeCard icon={educationIcon} title="Education">
             <div>
