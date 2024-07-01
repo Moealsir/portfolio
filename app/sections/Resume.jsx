@@ -13,14 +13,14 @@ const Resume = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.05 });
 
   return (
-    <section id="resume" className="bg-paradiso-500 w-full justify-center items-center flex flex-col mt-4 mb-4 max-sm:pr-4 max-sm:pl-4">
-      <div className="flex flex-col items-start mb-16">
-        <h1 ref={h1Ref} className="section-heading pt-8 scroll-element animate">
+    <section id="resume" className="bg-paradiso-500 w-full justify-center items-center flex flex-col mt-4 mb-4 max-sm:pr-8 max-sm:pl-8">
+      <div className="flex flex-col items-start mb-16 max-sm:mb-6">
+        <h1 ref={h1Ref} className="section-heading pt-8 max-sm:text-4xl scroll-element animate">
           Resume
         </h1>
       </div>
       <div className="flex flex-col lg:flex-row justify-start items-start max-sm:items-center lg:gap-10 max-sm:gap-2 sm:flex-col">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full">
           <ResumeCard icon={educationIcon} title="Education">
             <div>
               <ul className="flex flex-col gap-2">

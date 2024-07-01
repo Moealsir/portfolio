@@ -17,9 +17,9 @@ const Hero = () => {
       className="sections padding-x max-container"
     >
       <div className="flex flex-col items-center max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center">
-        <TextGenerateEffect words={words} className='font-Yellowtail text-8xl max-sm:text-6xl' />
-        <h2 className="font-bold text-4xl text-paradiso-900">{job}</h2>
-        <Image src={programmer} alt="Programmer" width={550} height={500} className="max-sm:scale-90" />
+        <TextGenerateEffect words={words} className='font-Yellowtail text-8xl max-sm:text-4xl' />
+        <h2 className="font-bold text-4xl max-sm:text-xl text-paradiso-900">{job}</h2>
+        <img src={programmer.src} alt="Programmer" class="w-[550px] h-[500px] max-sm:w-[250px] max-sm:h-[220px]" /> 
       </div>
     </section>
   );

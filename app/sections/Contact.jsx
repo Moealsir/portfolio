@@ -14,7 +14,7 @@ const About = () => {
         className="flex flex-col padding-x max-container bg-paradiso-600 w-full min-h-full justify-center items-center"
       >
         <div className="flex flex-col items-start mb-16">
-          <h1 ref={h1Ref} className="section-heading pt-8 scroll-element animate">
+          <h1 ref={h1Ref} className="section-heading pt-8 max-sm:text-4xl scroll-element animate">
             Contact
           </h1>
         </div>
