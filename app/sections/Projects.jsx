@@ -18,7 +18,7 @@ const Projects = () => {
       </div>
       <div
         ref={h1Ref}
-        className="scroll-element animate grid grid-cols-1 sm:grid-cols-2 sm:scale-90 gap-6 mb-6 max-sm:gap-10 md:pr-4 md:pl-4 max-sm:pr-8 max-sm:pl-8 "
+        className="scroll-element animate grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 sm:px-8 md:px-8 sm:scale-90 gap-8 mb-8 max-sm:gap-10 max-sm:px-4"
       >
         {projectData.map((project, index) => (
           <div
@@ -28,13 +28,13 @@ const Projects = () => {
             <div className="w-full flex flex-col justify-between">
               <figure className="project-figure w-full">
                 <div className="relative group">
-                  <div className="relative image-slider-container">
+                  <div className="relative image-slider-container items-center">
                     <SimpleImageSlider
                       width="100%"
                       height={300}
                       images={project.imgSrc}
                       showBullets={project.imgSrc.length > 1}
-                      autoPlay={true}
+                      // autoPlay={true}
                     />
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
                   </div>
@@ -73,7 +73,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-2 max-sm:mb-2 badges-container">
                   {project.used.map((lang, index) => (
-                    <div key={index} className={`badge`}>
+                    <div key={index} className={`small-badge`}>
                       <img
                         src={lang.src.src}
                         alt={lang.src.alt}
@@ -87,8 +87,8 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="text-start pt-2">
-                  <p className="justify-start text-start px-2 mb-4 font-montserrat text-paradiso-800 text-xl leading-7">
+                <div className="text-start pt-4">
+                  <p className="justify-start text-start px-4 mb-4 font-montserrat text-paradiso-800 text-xl leading-7">
                     {project.description}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ const Projects = () => {
             </div>
 
             <div className="w-full flex justify-start">
-              <p className="cursor-default badge text-white">{project.year}</p>
+              <p className="cursor-default small-badge text-white">{project.year}</p>
             </div>
           </div>
         ))}
