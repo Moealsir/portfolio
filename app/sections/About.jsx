@@ -39,7 +39,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col padding-x bg-paradiso-500 w-full min-h-full mt-10 justify-center items-center max-sm:pl-8 max-sm:pr-8 sm:p-4"
+      className="flex flex-col padding-x bg-paradiso-500 w-full min-h-full mt-10 justify-center items-center max-sm:pl-8 max-sm:pr-8 sm:p-8"
     >
       <div className="flex flex-col items-start mb-10">
         <h1
@@ -50,7 +50,7 @@ const About = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col bg-paradiso-600 p-2 rounded-xl shadow-lg max-sm:p-6">
+      <div className="flex flex-col bg-paradiso-600 p-6 rounded-xl shadow-lg max-sm:p-6">
         <div className="flex flex-col md:flex-row md:gap-10 lg:gap-20 lg:mx-6 justify-center items-center">
           <div className="flex justify-center items-center p-0 ">
             <Image
