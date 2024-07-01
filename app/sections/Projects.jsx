@@ -35,7 +35,7 @@ const Projects = () => {
                       width={500}
                       height={300}
                       images={project.imgSrc}
-                      showBullets={true}
+                      showBullets={project.imgSrc.length > 1}
                       autoPlay={true}
                     />
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
