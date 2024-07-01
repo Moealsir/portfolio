@@ -23,7 +23,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="hover:shadow-md bg-paradiso-400 md:w-[500px] bg-opacity-90 rounded-xl flex flex-col items-center p-4"
+            className="scroll-element animate hover:shadow-md bg-paradiso-400 md:w-[500px] bg-opacity-90 rounded-xl flex flex-col items-center p-4"
           >
             <div className="w-full flex flex-col justify-between">
               <figure className="project-figure w-full">
@@ -65,7 +65,7 @@ const Projects = () => {
                 </div>
               </figure>
 
-              <div className="flex flex-col lg:w-[500px] sm:w-full max-sm:w-full">
+              <div className="flex flex-col sm:w-full max-sm:w-full">
                 <div className="text-white flex justify-between items-center w-full p-2">
                   <h2 className="text-2xl text-paradiso-200 project-title font-bold">
                     {project.title}
@@ -88,7 +88,7 @@ const Projects = () => {
                 </div>
 
                 <div className="text-start pt-4">
-                  <p className="justify-start text-start px-4 mb-4 font-montserrat text-paradiso-800 text-xl leading-7">
+                  <p className="justify-start text-start mb-4 font-montserrat text-paradiso-800 text-xl leading-7">
                     {project.description}
                   </p>
                 </div>
