@@ -14,6 +14,8 @@
     width: 270px;
 }
 
+
+
 .about-info {
     text-align: justify;
 }
@@ -32,6 +34,8 @@ figure {
 border-radius: 50% !important;
 }
 
+
+
 .scroll-element {
     opacity: 0;
     transform: translateY(20px);
@@ -42,6 +46,8 @@ border-radius: 50% !important;
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 .project-title {
     text-shadow: rgba(81, 67, 21, 0.8) 3px 4px 7px;
@@ -99,7 +105,7 @@ section {
     justify-content: center;
 }
 
-/* styles.css or equivalent */
+
 .interest-card {
     display: flex;
     flex-direction: column;
@@ -137,6 +143,7 @@ section {
 
 .image-slider-container {
     width: 100%;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,11 +151,12 @@ section {
   
   .image-slider-container img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
   }
   
 
-.badge {
+.small-badge {
    @apply flex gap-1 items-center text-center shadow-md rounded-lg ring-1 ring-black ring-opacity-20 py-1 px-2
 }
