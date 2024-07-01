@@ -62,13 +62,13 @@ const About = () => {
           <div className="lg:w-[600px] max-sm:w-full md:w-[400px] p-4">
             <p className="text-start text-white font-bold text-2xl">
               Hello, I&apos;m Mohamed Suliman, I studied <span className="text-paradiso-900">electrical engineering </span>
-              at Sudan International University and worked in the field of <span className="text-paradiso-900">
+              at <span className="text-paradiso-900">Sudan International University </span> and worked in the field of <span className="text-paradiso-900">
               solar
-              energy</span> after my graduation. I participated in many volunteer
-              programs in Qatar. I spend my free time writing codes to <span className="text-paradiso-900"> solve
-              real problems or to design programs </span> that can make life easier. I
+              energy</span> after my graduation. I participated in many <span className="text-paradiso-900">volunteer programs </span>
+              in Qatar. I spend my free time writing codes to <span className="text-paradiso-900"> solve
+              real problems</span> or to <span className="text-paradiso-900">design programs </span>that can make life easier. I
               love <span className="text-paradiso-900">automation</span>.  I am ready to automate everything. I&apos;m an
-              ambitious <span className="text-paradiso-900">full stack developer</span> with an affinity towards <span className="text-paradiso-900">web development</span>. When I&apos;m not coding I love to play video games.
+              ambitious <span className="text-paradiso-900">full stack developer</span> with an affinity towards <span className="text-paradiso-900">web development.</span> When I&apos;m not coding I love to play <span className="text-paradiso-900">video games.</span>
             </p>
           </div>
         </div>
