@@ -14,7 +14,7 @@ const skillsCategories = {
   Tools,
 };
 
-const CustomCard = ({ title, className }) => {
+const SkillsCard = ({ title, className }) => {
   const cardRef = useIntersectionObserver({ threshold: 0.5 });
   const sect = skillsCategories[title];
 
@@ -29,281 +29,24 @@ const CustomCard = ({ title, className }) => {
         </h4>
       </CardHeader>
       <CardBody className="grid grid-cols-4 gap-6 justify-items-center items-center">
-        {title === "Languages" && (
-          <>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-sm hover:scale-105 w-[2px]"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Languages[0].src.src}
-                alt={Languages[0].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-sm hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Languages[1].src.src}
-                alt={Languages[1].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Languages[2].src.src}
-                alt={Languages[2].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Languages[3].src.src}
-                alt={Languages[3].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-          </>
-        )}
-        {title === "Frontend" && (
-          <>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Frontend[0].src.src}
-                alt={Frontend[0].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Frontend[1].src.src}
-                alt={Frontend[1].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Frontend[2].src.src}
-                alt={Frontend[2].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Frontend[3].src.src}
-                alt={Frontend[3].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-          </>
-        )}
-        {title === "Backend" && (
-          <>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Backend[0].src.src}
-                alt={Backend[0].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Backend[1].src.src}
-                alt={Backend[1].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Backend[2].src.src}
-                alt={Backend[2].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-          </>
-        )}
-        {title === "Database" && (
-          <>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Database[0].src.src}
-                alt={Database[0].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Database[1].src.src}
-                alt={Database[1].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Database[2].src.src}
-                alt={Database[2].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-          </>
-        )}
-        {title === "Tools" && (
-          <>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Tools[0].src.src}
-                alt={Tools[0].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Tools[1].src.src}
-                alt={Tools[1].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Tools[2].src.src}
-                alt={Tools[2].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Tools[3].src.src}
-                alt={Tools[3].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Tools[4].src.src}
-                alt={Tools[4].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Tools[5].src.src}
-                alt={Tools[5].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-            <div
-              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-              style={{ width: "60px", height: "60px" }}
-            >
-              <Image
-                src={Tools[6].src.src}
-                alt={Tools[6].alt}
-                width={60}
-                height={60}
-                style={{ height: "auto" }}
-              />
-            </div>
-          </>
-        )}
+        {sect.map((skill, index) => (
+          <div
+            key={index}
+            className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
+            style={{ width: "60px", height: "60px" }}
+          >
+            <Image
+              src={skill.src.src}
+              alt={skill.alt}
+              width={60}
+              height={60}
+              style={{ height: "auto" }}
+            />
+          </div>
+        ))}
       </CardBody>
     </Card>
   );
 };
 
-export default CustomCard;
+export default SkillsCard;
