@@ -8,7 +8,7 @@ import {
   Tools,
   socialMedia,
 } from "../constants/index.js";
-import CustomCard from "../components/SkillsCard.jsx";
+import SkillsCard from "../components/SkillsCard.jsx";
 import useIntersectionObserver from "../components/ui/useIntersectionObserver";
 import GitHubCalendar from "react-github-calendar";
 
@@ -25,19 +25,19 @@ const Skills = () => {
       </div>
       <div className="grid grid-cols-2 sm:scale-90 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 lg:mb-0 xl:mb-10 lg:scale-110">
         <div className="languages">
-          <CustomCard title="Languages" sect={Languages} />
+          <SkillsCard title="Languages" sect={Languages} />
         </div>
         <div className="frontend">
-          <CustomCard title="Frontend" sect={Frontend} />
+          <SkillsCard title="Frontend" sect={Frontend} />
         </div>
         <div className="backend">
-          <CustomCard title="Backend" sect={Backend} />
+          <SkillsCard title="Backend" sect={Backend} />
         </div>
         <div className="database">
-          <CustomCard title="Database" sect={Database} />
+          <SkillsCard title="Database" sect={Database} />
         </div>
         <div className="tools">
-          <CustomCard title="Tools" sect={Tools} />
+          <SkillsCard title="Tools" sect={Tools} />
         </div>
       </div>
       <div className="github-contributions flex flex-col justify-center items-center md:scale-90">
