@@ -231,7 +231,7 @@ export const Experiences = [
     {
         position: "Software Engineering Intern",
         company: "ALX Africa",
-        year: "2023 - present",
+        year: "Sep 2023 - present",
     },
 ]
 
