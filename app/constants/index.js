@@ -1,7 +1,17 @@
-import { facebook, instagram, twitter, linkedin, whatsapp } from "../assets/icons";
-import { programming, frontend, backend, webdev, typing, dns, datafetch, scrap, automation } from "../assets/icons/index.js";
+import { facebook, instagram, twitter, linkedin, whatsapp } from "../assets/icons"; // Footer Icons
+import { programming, frontend, backend, webdev, typing, dns, datafetch, scrap, automation } from "../assets/icons/index.js"; // Interests Icons
 
+import {c, javascript, python, typescript} from "../assets/icons"; // Skills Icons .. Languages 
+import { css, html, tailwind, react } from "../assets/icons"; // Skills Icons .. Frontend
+import { nodejs, nextjs, flask, expressjs } from "../assets/icons"; // Skills Icons .. Backend
+import { mysql, mongodb, sqlite } from "../assets/icons"; // Skills Icons .. Database
+import { bash, git, github, githubactions, vscode, postman, nginx } from "../assets/icons"; // Skills Icons .. Tools
 
+import { htmlbadge, reactbadge, typescriptbadge, tailwindbadge, databasebadge, nodejsbadge, pythonbadge, seleniumbadge, wwebjsbadge } from "../assets/icons"; // Projects Badges
+import { portfolio, alxproj, alxterm, alxmsg, imdb, bettyfixer, weatherwave7 } from "../assets/images/"; // Projects Images
+import { tcexcelout, tcjsonout, exceloutput, ondemand, sqloutput } from "../assets/images/"; // Projects Images
+
+// Navbar 
 export const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
@@ -11,23 +21,43 @@ export const navLinks = [
     { href: "#contact", label: "Contact" },
 ];
 
+// Interests
+export const Interests = [
+    {
+        title: "Web Development",
+        icon: webdev,
+    },
+    {
+        title: "Frontend Development",
+        icon: frontend,
+    },
+    {
+        title: "Backend Development",
+        icon: backend,
+    },
+    {
+        title: "Touch Typing",
+        icon: typing,
+    },
+    {
+        title: "Scraping",
+        icon: scrap,
+    },
+    {
+        title: "Data Fetching",
+        icon: datafetch,
+    },
+    {
+        title: "Automation",
+        icon: automation,
+    },
+    {
+        title: "Domain & DNS",
+        icon: dns,
+    },
+]   
 
-import {c, javascript, python, typescript} from "../assets/icons";
-import { bash, expressjs, git, github, githubactions, vscode, postman, nginx } from "../assets/icons";
-import { mysql, mongodb, sqlite } from "../assets/icons";
-import { nodejs, nextjs, flask } from "../assets/icons";
-import { css, html, tailwind, react } from "../assets/icons";
-
-export const socialMedia = [
-    // { src: facebook, alt: "facebook logo", url: "https://facebook.com" },
-    { src: facebook, alt: "facebook logo", url: "https://www.facebook.com/profile.php?id=100084065914928&mibextid=ZbWKwL" },
-    { src: linkedin, alt: "linkedin logo", url: "https://www.linkedin.com/in/mohamed-suliman-27a723259/" },
-    { src: github, alt: "github logo", url: "https://github.com/Moealsir" },
-    { src: twitter, alt: "twitter logo", url: "https://twitter.com/sonofsecret" },
-    { src: instagram, alt: "instagram logo", url: "https://instagram.com/sonofsecret" },
-    { src: whatsapp, alt: "whatsapp logo", url: "https://api.whatsapp.com/send/?phone=97439900342" },
-];
-
+// Skills
 export const Languages = [
     {alt: "C", src: c},
     {alt: "JavaScript", src: javascript},
@@ -62,13 +92,9 @@ export const Tools = [
     {alt: "VS Code", src: vscode},
     {alt: "Postman", src: postman},
     {alt: "Nginx", src: nginx},
-    
     {alt: "Bash", src: bash}
 ]
 
-import { htmlbadge, reactbadge, typescriptbadge, tailwindbadge, databasebadge, nodejsbadge, pythonbadge, seleniumbadge, wwebjsbadge } from "../assets/icons";
-import { portfolio, alxproj, alxterm, alxmsg, imdb, bettyfixer, weatherwave7 } from "../assets/images/";
-import { tcexcelout, tcjsonout, exceloutput, ondemand, sqloutput } from "../assets/images/";
 export const projectData = [
     {
         title: 'Portfolio',
@@ -174,7 +200,7 @@ export const projectData = [
     }
 ];
 
-
+// Resume
 export const Education = [
     {
         subject: "Bachelor of Science in Control System Engineering",
@@ -187,7 +213,6 @@ export const Education = [
         year: "Sep 2023 - present",
     },
 ]
-
 
 export const Certificates = [
     {
@@ -218,71 +243,12 @@ export const Position = [
     },
 ]
 
-import educationIcon from "../assets/icons/education.svg";
-
-export const Interests = [
-    {
-        title: "Web Development",
-        icon: webdev,
-    },
-    {
-        title: "Frontend Development",
-        icon: frontend,
-    },
-    {
-        title: "Backend Development",
-        icon: backend,
-    },
-    {
-        title: "Touch Typing",
-        icon: typing,
-    },
-    {
-        title: "Scraping",
-        icon: scrap,
-    },
-    {
-        title: "Data Fetching",
-        icon: datafetch,
-    },
-    {
-        title: "Automation",
-        icon: automation,
-    },
-    {
-        title: "Domain & DNS",
-        icon: dns,
-    },
-]   
-
-export const footerLinks = [
-    {
-        title: "Products",
-        links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
-        ],
-    },
-    {
-        title: "Help",
-        links: [
-            { name: "About us", link: "/" },
-            { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
-        ],
-    },
-    {
-        title: "Get in touch",
-        links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
-        ],
-    },
+// Footer Links
+export const socialMedia = [
+    { src: facebook, alt: "facebook logo", url: "https://www.facebook.com/profile.php?id=100084065914928&mibextid=ZbWKwL" },
+    { src: linkedin, alt: "linkedin logo", url: "https://www.linkedin.com/in/mohamed-suliman-27a723259/" },
+    { src: github, alt: "github logo", url: "https://github.com/Moealsir" },
+    { src: twitter, alt: "twitter logo", url: "https://twitter.com/sonofsecret" },
+    { src: instagram, alt: "instagram logo", url: "https://instagram.com/sonofsecret" },
+    { src: whatsapp, alt: "whatsapp logo", url: "https://api.whatsapp.com/send/?phone=97439900342" },
 ];
-
