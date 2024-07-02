@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { projectData } from "../constants/index.js";
 import useIntersectionObserver from "../components/ui/useIntersectionObserver.js";
 import { preview, source } from "../assets/icons";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const Projects = () => {
+  const [hoveredProject, setHoveredProject] = useState(null);
   const h1Ref = useIntersectionObserver({ threshold: 0.05 });
 
   return (
@@ -24,44 +25,48 @@ const Projects = () => {
           <div
             key={index}
             className="scroll-element animate hover:shadow-md bg-paradiso-400 md:w-[500px] bg-opacity-90 rounded-xl flex flex-col items-center p-4"
+            onMouseEnter={() => setHoveredProject(index)}
+            onMouseLeave={() => setHoveredProject(null)}
           >
             <div className="w-full flex flex-col justify-between">
-              <figure className="project-figure w-full">
+              <figure className="project-figure w-full relative">
                 <div className="relative group">
-                  <div className="relative image-slider-container items-center">
-                    <SimpleImageSlider
-                      width="100%"
-                      height={300}
-                      images={project.imgSrc}
-                      showBullets={project.imgSrc.length > 1}
-                      // autoPlay={true}
-                    />
-                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
-                  </div>
-                  <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <img
-                      src={source.src}
-                      alt="Source Code"
-                      width={48}
-                      height={48}
-                      className="cursor-pointer source-icon hover:opacity-75 mx-2"
-                      onClick={() => window.open(project.repo)}
-                      style={{ filter: "invert(1)" }}
-                    />
-                    <img
-                      src={preview.src}
-                      alt="View Code"
-                      width={48}
-                      height={48}
-                      className={`cursor-pointer source-icon hover:opacity-75 mx-2 ${
-                        project.link === "" ? "hidden" : ""
-                      }`}
-                      onClick={() =>
-                        project.link !== "" && window.open(project.link)
-                      }
-                      style={{ filter: "invert(1)" }}
-                    />
-                  </div>
+                  <SimpleImageSlider
+                    width="100%"
+                    height={300}
+                    images={project.imgSrc}
+                    // slideDuration={1}
+                    // showBullets={project.imgSrc.length > 1}
+                    autoPlay={true}
+                  />
+                  {hoveredProject === index && (
+                    <div className="overlay">
+                      <div className="overlay-content">
+                        <img
+                          src={source.src}
+                          alt="Source Code"
+                          width={48}
+                          height={48}
+                          className="cursor-pointer source-icon hover:opacity-75 mx-2"
+                          onClick={() => window.open(project.repo)}
+                          style={{ filter: "invert(1)" }}
+                        />
+                        <img
+                          src={preview.src}
+                          alt="View Code"
+                          width={48}
+                          height={48}
+                          className={`cursor-pointer source-icon hover:opacity-75 mx-2 ${
+                            project.link === "" ? "hidden" : ""
+                          }`}
+                          onClick={() =>
+                            project.link !== "" && window.open(project.link)
+                          }
+                          style={{ filter: "invert(1)" }}
+                        />
+                      </div>
+                    </div>
+                  )}
                 </div>
               </figure>
 
@@ -96,7 +101,9 @@ const Projects = () => {
             </div>
 
             <div className="w-full flex justify-start">
-              <p className="cursor-default small-badge text-white">{project.year}</p>
+              <p className="cursor-default small-badge text-white">
+                {project.year}
+              </p>
             </div>
           </div>
         ))}

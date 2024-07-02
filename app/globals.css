@@ -141,20 +141,32 @@ section {
     @apply bg-paradiso-500 w-full min-h-full justify-center items-center flex flex-col mt-4 mb-4 max-sm:mt-0 max-sm:mb-4;
 }
 
-.image-slider-container {
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10; /* Ensuring it appears above the images but below the bullets */
   }
   
-  .image-slider-container img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    display: block;
+  .project-figure:hover .overlay {
+    opacity: 1;
   }
+  
+  .overlay-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20; /* Ensuring it appears above the overlay */
+  }
+  
   
 
 .small-badge {
