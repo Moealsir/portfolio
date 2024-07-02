@@ -241,6 +241,11 @@ export const Position = [
         school: "Planet Energy",
         year: "Mar 2022 – Apr 2023",
     },
+    {
+        subject: "Volunteer",
+        school: "3-2-1 Qatar Olympic",
+        year: "Jun 2024 – Jul 2024",
+    },
 ]
 
 // Footer Links
