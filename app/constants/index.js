@@ -237,7 +237,7 @@ export const Experiences = [
 
 export const Position = [
     {
-        subject: "Electrical Engineer",
+        subject: "Electrical Engineer - Solar Engineer",
         school: "Planet Energy",
         year: "Mar 2022 – Apr 2023",
     },
