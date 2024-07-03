@@ -106,35 +106,26 @@ const Resume = () => {
               <ul className="flex flex-col gap-2">
                 {Position.map((pos, index) => (
                   <li key={index}>
-                    <span className="resume-div-sub-heading">
-                      {pos.subject}
-                    </span>
+                    <span className="resume-div-sub-heading">{pos.subject}</span>
                     <br />
-                    <span>
-                      {pos.school}
-                    </span>
+                    <span>{pos.school}</span>
                     <br />
-                    <div className="flex w-full mt-1 mb-2 justify-between">
-                      <span className="date-badge">
-                        {pos.year}
-                      </span>
+                    <div className="flex w-full mt-1 justify-between">
+                      <span className="date-badge">{pos.year}</span>
                       <Image
                         className="cursor-pointer"
                         src={arrowdown}
                         alt="ReadMore"
                         width={30}
                         height={30}
-                      
                         onClick={() => handleToggle(index)}
                       />
                     </div>
                     <div className={visibleDescriptions[index] ? "" : "hidden"}>
-                      <ul className="flex flex-col">
+                      <ul className={`flex flex-col ${index === Position.length - 1 ? "pb-2" : ""}`}>
                         {pos.responsibilities.map((res, resIndex) => (
                           <li key={resIndex}>
-                            <span className="text-white text-sm">
-                              {res}
-                            </span>
+                            <span className="text-white text-sm">{res}</span>
                           </li>
                         ))}
                       </ul>
