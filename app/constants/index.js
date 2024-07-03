@@ -239,11 +239,24 @@ export const Position = [
     {
         subject: "Electrical Engineer - Solar Engineer",
         school: "Planet Energy",
+        responsibilities: [
+            "• Presented at 5+ national exhibitions with technical talks.", 
+            "• Achieved 20% efficiency increase as Sector Manager.", 
+            "• Enhanced project efficiency by 25% with solar solutions.",
+            "• Designed innovative solar systems for clients.",
+            "• Coordinated installation, boosting quality and satisfaction.",
+            "• Improved system efficiency by 20% with maintenance.",
+        ],
         year: "Mar 2022 – Apr 2023",
     },
     {
         subject: "Volunteer",
         school: "3-2-1 Qatar Olympic",
+        responsibilities: [
+            "• Explained Olympic games to 100+ children and adults.", 
+            "• Demonstrated games, ensuring 95% satisfaction.", 
+            "• Coordinated with organizers, achieving 30% event efficiency increase.",
+        ],
         year: "Jun 2024 – Jul 2024",
     },
 ]
