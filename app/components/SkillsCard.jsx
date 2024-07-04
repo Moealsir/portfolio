@@ -1,6 +1,6 @@
 // SkillsCard.jsx
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import Image from "next/image";
 import useIntersectionObserver from "./ui/useIntersectionObserver";
@@ -17,6 +17,7 @@ const skillsCategories = {
 const SkillsCard = ({ title, className }) => {
   const cardRef = useIntersectionObserver({ threshold: 0.5 });
   const sect = skillsCategories[title];
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <Card
@@ -32,16 +33,27 @@ const SkillsCard = ({ title, className }) => {
         {sect.map((skill, index) => (
           <div
             key={index}
-            className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
-            style={{ width: "60px", height: "60px" }}
+            className="relative"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
-            <Image
-              src={skill.src.src}
-              alt={skill.alt}
-              width={60}
-              height={60}
-              style={{ height: "auto" }}
-            />
+            <div
+              className="p-2 bg-white rounded-md flex items-center justify-center transition-transform hover:shadow-white-md hover:scale-105"
+              style={{ width: "60px", height: "60px" }}
+            >
+              <Image
+                src={skill.src.src}
+                alt={skill.alt}
+                width={60}
+                height={60}
+                style={{ height: "auto" }}
+              />
+            </div>
+            {hoveredIndex === index && (
+              <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-paradiso-900 text-white text-sm px-2 py-1 rounded-md z-50 whitespace-nowrap">
+                {skill.alt}
+              </span>
+            )}
           </div>
         ))}
       </CardBody>

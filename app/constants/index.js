@@ -59,10 +59,10 @@ export const Interests = [
 
 // Skills
 export const Languages = [
-    {alt: "C", src: c},
-    {alt: "JavaScript", src: javascript},
     {alt: "Python", src: python},
     {alt: "TypeScript", src: typescript},
+    {alt: "JavaScript", src: javascript},
+    {alt: "C", src: c},
 ]
 
 export const Frontend = [
@@ -89,9 +89,9 @@ export const Tools = [
     {alt: "Git", src: git},
     {alt: "GitHub", src: github},
     {alt: "GitHub Actions", src: githubactions},
+    {alt: "Nginx", src: nginx},
     {alt: "VS Code", src: vscode},
     {alt: "Postman", src: postman},
-    {alt: "Nginx", src: nginx},
     {alt: "Bash", src: bash}
 ]
 
