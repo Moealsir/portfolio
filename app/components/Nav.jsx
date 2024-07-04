@@ -66,49 +66,67 @@ const Nav = () => {
           ))}
 
           <li className="inline-block font-bold text-md rounded-lg bg-paradiso-800 px-2 py-1">
-            <a href="/Mohamed_Suliman_CV.pdf" className="flex items-center" download>
+            <a
+              href="/Mohamed_Suliman_CV.pdf"
+              className="flex items-center"
+              download
+            >
               Download CV <IconCloudDownload className="ml-2" />
             </a>
           </li>
         </ul>
-
-        <Menu>
-          <MenuButton
-            as={Button}
-            variant="link"
-            className="cursor-pointer hidden max-lg:block"
-          >
-            <Image
-              className="hidden max-lg:block shadow-md shadow-nlue-50"
-              src={hamburger}
-              alt="hamburger"
-              width={25}
-              height={25}
-            />
-          </MenuButton>
-          <MenuList className="bg-paradiso-500 px-4 shadow-lg shadow-nlue-50">
-            {navLinks.map((item) => (
-              <MenuItem
-                className="text-white font-montserrat leading-normal text-xl"
-                key={item.label}
-                minWidth="150px"
+        <div className="flex max-sm:gap-32 sm:gap-48 md:gap-96 lg:hidden">
+          <div>
+            <li className="inline-block font-bold text-md rounded-lg bg-paradiso-800 px-2 py-1">
+              <a
+                href="/Mohamed_Suliman_CV.pdf"
+                className="flex items-center text-nowrap"
+                download
               >
-                <a
-                  className={`font-montserrat leading-normal text-2xl transition-colors transition-font-weight duration-300 hover:font-bold hover:text-paradiso-950 ${
-                    activeLink === item.label
-                      ? "font-bold text-paradiso-950"
-                      : navTextColorClass
-                  }`}
-                  onClick={() => handleClick(item.label)}
-                  href={item.href}
-                  style={{ display: "inline-block", width: "max-content" }}
-                >
-                  {item.label}
-                </a>
-              </MenuItem>
-            ))}
-          </MenuList>
-        </Menu>
+                Download CV <IconCloudDownload className="ml-2" />
+              </a>
+            </li>
+          </div>
+          <div>
+            <Menu className="flex ga-4">
+              <MenuButton
+                as={Button}
+                variant="link"
+                className="cursor-pointer hidden max-lg:block "
+              >
+                <Image
+                  className="hidden max-lg:block shadow-md shadow-nlue-50"
+                  src={hamburger}
+                  alt="hamburger"
+                  width={25}
+                  height={25}
+                />
+              </MenuButton>
+              <MenuList className="bg-paradiso-500 px-4 shadow-lg shadow-nlue-50">
+                {navLinks.map((item) => (
+                  <MenuItem
+                    className="text-white font-montserrat leading-normal text-xl"
+                    key={item.label}
+                    minWidth="150px"
+                  >
+                    <a
+                      className={`font-montserrat leading-normal text-2xl transition-colors transition-font-weight duration-300 hover:font-bold hover:text-paradiso-950 ${
+                        activeLink === item.label
+                          ? "font-bold text-paradiso-950"
+                          : navTextColorClass
+                      }`}
+                      onClick={() => handleClick(item.label)}
+                      href={item.href}
+                      style={{ display: "inline-block", width: "max-content" }}
+                    >
+                      {item.label}
+                    </a>
+                  </MenuItem>
+                ))}
+              </MenuList>
+            </Menu>
+          </div>
+        </div>
       </nav>
     </header>
   );
