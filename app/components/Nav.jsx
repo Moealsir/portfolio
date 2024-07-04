@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import hamburger from "../assets/icons/hamburger.svg";
+import IconCloudDownload from "../assets/icons/IconCloudDownload";
 import { navLinks } from "../constants";
 import Image from "next/image";
 
@@ -63,6 +64,12 @@ const Nav = () => {
               </a>
             </li>
           ))}
+
+          <li className="inline-block font-bold text-md rounded-lg bg-paradiso-800 px-2 py-1">
+            <a href="/Mohamed_Suliman_CV.pdf" className="flex items-center" download>
+              Download CV <IconCloudDownload className="ml-2" />
+            </a>
+          </li>
         </ul>
 
         <Menu>
