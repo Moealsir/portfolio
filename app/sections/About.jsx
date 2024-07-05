@@ -13,7 +13,9 @@ import {
 import useIntersectionObserver from "../components/ui/useIntersectionObserver";
 import educationIcon from "../assets/icons/education.svg";
 import ResumeCard from "../components/ResumeCard";
-import profile from "../assets/images/me.jpeg";
+// import profile from "../assets/images/me.jpeg";
+import profilepic from "../assets/images/profile-pic.png";
+
 
 const About = () => {
   const h1Ref = useIntersectionObserver({ threshold: 0.2 });
@@ -56,7 +58,7 @@ const About = () => {
             <Image
               ref={imgRef}
               className="rounded-circle profile-img profile-move border-8 border-paradiso-400 w-[270px] h-[270px] max-sm:w-[180px] max-sm:h-[180px] sm:mt-4 sm:mb-4 max-sm:mb-4"
-              src={profile}
+              src={profilepic}
               alt="Mohamed Suliman Picture"
               width={270}
               height={270}
