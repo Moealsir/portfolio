@@ -25,9 +25,9 @@ const About = () => {
             <div className="mt-3 flex flex-col gap-[6.4px] text-[16px] font-normal md:text-[17.6px]">
               <p className="whitespace-nowrap">
                 Email:{" "}
-                <a href="mailto:mohamedwdalsir@gmail.com">
+                <a href="mailto:info@moealsir.tech">
                   <span className="inline underline">
-                    mohamedwdalsir@gmail.com
+                    info@moealsir.tech
                   </span>
                 </a>
               </p>
