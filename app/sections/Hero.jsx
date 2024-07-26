@@ -6,7 +6,7 @@ import { TextGenerateEffect } from '../components/ui/text-generate-effect';
 import useIntersectionObserver from '../components/ui/useIntersectionObserver';
 
 const Hero = () => {
-  const words = `Mohamed Suliman`;
+  const words = `Mohamed Sulimanss`;
   const job = `full stack developer`;
   const heroRef = useIntersectionObserver({ threshold: 0.5 });
 
