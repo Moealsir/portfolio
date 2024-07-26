@@ -25,13 +25,13 @@ const About = () => {
             <div className="mt-3 flex flex-col gap-[6.4px] text-[16px] font-normal md:text-[17.6px]">
               <p className="whitespace-nowrap">
                 Email:{" "}
-                <a href="mailto:info@moealsir.tech">
+                <a href="mailto:mohamed">
                   <span className="inline underline">
-                    info@moealsir.tech
+                    wadalsir
                   </span>
                 </a>
               </p>
-              <p>Phone: <a href="tel:+97439900342">+97439900342</a></p>
+              <p>Phone: <a href="tel:+97439900342">+234234</a></p>
             </div>
           </div>
           <div style={{ opacity: 1, transform: "none", filter: "invert(1)" }}>
