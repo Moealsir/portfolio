@@ -4,7 +4,7 @@ import hamburger from "../assets/icons/hamburger.svg";
 import IconCloudDownload from "../assets/icons/IconCloudDownload";
 import { navLinks } from "../constants";
 import Image from "next/image";
-
+import Logo from "../../public/Logo.png";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 
 const Nav = () => {
@@ -44,7 +44,7 @@ const Nav = () => {
       >
         {/* Logo */}
         {/* <a href="/">
-                    <Image src={headerLogo} alt="logo" width={130} height={29} />
+                    <Image src={Logo.src} alt="logo" width={130} height={29} />
                 </a> */}
         {/* Navigation Links */}
         <ul className="flex flex-1 justify-center items-center gap-12 max-lg:hidden">
