@@ -4,7 +4,7 @@ import hamburger from "../assets/icons/hamburger.svg";
 import IconCloudDownload from "../assets/icons/IconCloudDownload";
 import { navLinks } from "../constants";
 import Image from "next/image";
-import Logo from "../../public/Logo.png";
+import Logo from "../../public/Logo.ico";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 
 const Nav = () => {
