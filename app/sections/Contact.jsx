@@ -27,7 +27,7 @@ const About = () => {
                 Email:{" "}
                 <a href="mailto:info@moealsir.tech">
                   <span className="inline underline">
-                    info@moealsir.tech
+                    contact@moealsir.tech
                   </span>
                 </a>
               </p>
